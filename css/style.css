@@ -1,0 +1,559 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+* { box-sizing: border-box; }
+
+html {
+    width:100%;
+    height:100%;
+}
+
+body {
+  position: relative;
+  font-family:'Lato','Arial', 'Helvetica', sans-serif;
+  color:black;
+  background: white;
+  font-weight:100;
+  width:100%;
+  height:100%;
+  overflow-x:hidden;
+}
+
+/********************
+ ****** Header ******
+ ********************/
+.banner {
+  background: black;
+  width: 100%;
+  display: table;
+  border-top: 1px solid red;
+}
+
+.masthead {
+  width: 1510px;
+  margin: 0 auto;
+}
+
+.masthead img {
+  width: 350px;
+  margin: 0 0 10px 0;
+  padding-left: 30px;
+  float: left;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  float: right;
+  width: 450px;
+  margin-right: 40px;
+}
+
+#steam {
+  display: block;
+  margin: 50px 0 0 0;
+  width: 200px;
+}
+
+#bandcamp {
+  display: block;
+  margin: 20px 0 0 0;
+}
+
+#bandcamp img {
+  width: 150px;
+}
+
+/*******************
+ ****** Links ******
+ *******************/
+a:link,
+a:visited,
+a:active { text-decoration: none; color:red; }
+a:hover {text-decoration: underline; color:red;}
+
+/******************
+ ****** Main ******
+ ******************/
+main {
+  width: 1510px;
+  margin: 0 auto;
+  padding: 40px;
+  display: table;
+  clear: both;
+  position: relative;
+}
+
+main:after {
+  clear: both;
+}
+
+
+.trailer {
+  max-width: 940px;
+  background: black;
+  margin-bottom: 40px;
+  float: left;
+}
+
+.trailer video {
+  width: 100%;
+}
+
+
+/*******************
+ ****** Aside ******
+ *******************/
+
+.hero {
+  max-height: 100px;
+  width: 100%;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  background: black;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+aside {
+  color: black;
+  width: 450px;
+  margin-left: 980px;
+}
+
+#aside-head {
+  postion: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+#aside-head h1 {
+  margin-top: 40px;
+}
+
+.media {
+  margin-bottom: 40px;
+}
+
+.media img {
+  width: 100%;
+}
+
+.media-item {
+  border: 1px solid gray;
+  overflow: hidden;
+  margin-bottom: 40px;
+  position: relative;
+  height: 200px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.show-media-item {
+  border: 1px solid gray;
+  overflow: auto;
+  margin-bottom: 40px;
+  position: relative;
+  line-height: 1.2;
+  width: 100%;
+  cursor: pointer;
+  height: auto;
+}
+
+.media figure:nth-child(1) {
+  margin-top: 20px;
+  display: block;
+}
+
+.media-caption {
+  color: white;
+  background: black;
+  background: rgba(0,0,0,0.75); 
+  padding: 5px 5px 5px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 33px;
+}
+
+.show-caption {
+  color: white;
+  background: black;
+  background: rgba(0,0,0,0.75); 
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.caption-expand {
+  color: white;
+  background: black;
+  background: rgba(0,0,0,0.75); 
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+
+/*********************
+ ****** Article ******
+ *********************/
+.node-case {
+  color: black;
+  width: 980px;
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  float: left;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.node {
+  width: 450px;
+  margin: 40px 0 0 40px;
+  
+}
+
+.node:nth-child(-n+2) {
+  margin-top: 0;
+}
+
+.node:nth-of-type(odd) {
+  margin-left: 0;
+}
+
+.node header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+h2 {
+  font-size: 26px;
+  margin: 40px 0 10px 0;
+}
+
+h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.node address {
+  display: inline-block;
+}
+
+.node time {
+  display: inline-block;
+}
+
+.node figure {
+  cursor: pointer;
+  border: 1px solid gray;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+  background: black;
+}
+
+.node figcaption {
+  color: white;
+  background: rgba(0,0,0,0.75); 
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.node img {
+  width: 100%;
+}
+
+.show-img-background {
+	position: fixed;
+  display: block;
+	z-index: 888;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+.show-node-img {
+	position: fixed;
+	z-index: 999;
+  margin: 5% auto;
+  top: 0;
+  left: 0;
+  right: 0;
+	max-width: 600px;
+  border: 2px solid black;
+}
+
+.node p {
+  font-size: 18px;
+  line-height: 1.2;
+  width: 100%;
+}
+
+.toggle-fold {
+  display: inline;
+  color: red;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.fold {
+  display: none;
+}
+
+.show-fold {
+  display: block;
+}
+
+.node footer {
+  border: 1px solid #ccc;
+  background: #eee;
+  margin-top: 20px;
+  padding: 5px;
+  width: 100%;
+  height: auto;
+}
+
+
+
+/*********************
+ ****** Artists ******
+ *********************/
+ul li {
+  font-size: 18px;
+  line-height: 1.2;
+  width: 100%;
+}
+
+/**************************
+ ****** Contact Form ******
+ **************************/
+.contact-form {
+  width: 450px;
+}
+
+.errors {
+  color: black;
+  font-weight: bold;
+  background: red;
+  border: 1px solid gray;
+  padding: 10px;
+  margin-bottom: 40px;
+  width: 100%;
+
+}
+
+label {
+  font-size: 18px;
+  margin: 20px 0 5px 0;
+  display: block;
+}
+
+input {
+  font-size: 20px;
+  border: 1px solid #ccc;
+  height: 40px;
+  width: 100%;
+  display: block;
+}
+
+textarea {
+  font-size: 20px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 300px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contentinfo {
+  color: white;
+  text-align: center;
+  background: black;
+  width: 100%;
+  overflow: auto;
+  padding: 2% 0;
+  margin-top: 80px;
+}
+
+.contentinfo p {
+  margin-bottom: 5px;
+}
+
+.contentinfo p:last-child {
+  margin-bottom: 0;
+}
+
+
+@media all and (max-width:1510px) {
+
+  .masthead {
+    width: 1020px;
+  }
+
+  main {
+    width: 1020px;
+  }
+
+  .node-case {
+    width: 450px;
+  }
+
+  .node:nth-child(2) {
+    margin-top: 40px;
+  }
+
+  .node {
+    margin-left: 0;
+  }
+
+  aside {
+    margin-left: 490px;
+  }
+
+  .contact-form {
+    margin-left: 490px;
+  }
+
+}
+
+
+@media all and (max-width:1020px) {
+
+  .masthead {
+    width: 100%;
+    margin: 0;
+  }
+
+  main {
+    width: 100%;
+    padding: 40px;
+    margin: 0;
+  }
+
+  .node-case {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+
+  .node {
+    width: 100%;
+    float: none;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  aside {
+    width: 100%;
+    margin: 0;
+  }
+  
+ .media figure {
+    width: 49%;
+    display: inline-block;
+    margin:0;
+    margin-bottom: 5px;
+  }
+
+ .media figure:nth-of-type(even) {
+    margin-left: 5px;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin: 0;
+  }
+
+}
+
+
+@media all and (max-width:500px) {
+
+  .masthead img {
+    width: 250px;
+    margin: 0 0 10px 5px;
+    padding-left: 0;
+    float: left;
+  }
+
+  .masthead .menu {
+    padding: 42px 10px 50px 10px;
+  }
+
+  .nav {
+    margin: 0;
+    width: 100%;
+  }
+
+  #steam {
+    margin: 0;
+    margin-left: 5px;
+  }
+
+  #bandcamp {
+    margin: -20px 10px 0 0;
+  }
+
+  #bandcamp img {
+    width: 100px;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 25px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+
+  .trailer {
+    margin-bottom: 10px;
+  }
+
+  .media figure {
+    width: 100%;
+  }
+
+ .media figure:nth-of-type(even) {
+    margin-left: 0;
+  }
+
+  ul li {
+    font-size: 14px;
+    line-height: 1.2;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+}
+
+
+
+
