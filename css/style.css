@@ -49,13 +49,13 @@ body {
 
 #steam {
   display: block;
-  margin: 30px 0 0 0;
+  margin: 40px 0 0 0;
   width: 200px;
 }
 
 #bandcamp {
   display: block;
-  margin: 0 0 0 0;
+  margin: 10px 0 0 0;
 }
 
 #bandcamp img {
