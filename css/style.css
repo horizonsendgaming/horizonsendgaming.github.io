@@ -127,7 +127,9 @@ aside {
   height: auto;
 }
 
-
+#aside-head img {
+  margin-top: 40px;	
+}
 
 .media {
   margin-bottom: 40px;
