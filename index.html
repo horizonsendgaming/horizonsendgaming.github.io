@@ -488,7 +488,7 @@
 	    <h1 property="name">The Great Gaias</h1>
             <p property="description"><span property="creator" typeof="Organization"><span property="name">Horizon's End</span></span> is proud to present <i>The Great Gaias</i>, a <abbr property="genre" title="Role-Playing Game">RPG</abbr> for <span property="gamePlatform">PC</span> and <span property="gamePlatform">mobile devices</span>.</p>
             <img property="image" src="images/horizons-end_the-great-gaias_title-screen.png" alt="The Great Gaias Title Screen">
-            <div class="hero" id="countdown"></div>
+	    <div><a href="https://www.dropbox.com/sh/8zpffok4joky59p/AACLe425qbiZlwTgEw1BKRMaa?dl=0" target="_blank">&#xf0f6; Press Kit</a></div>
           </div>
           <h2>The World Map of Tenat</h2>
           <a href="images/horizons-end_the-great-gaias_tenat-world-map.jpg">
@@ -605,26 +605,6 @@
             <p><a href="https://www.facebook.com/horizonsendgaming" target="_blank">Facebook</a> | <a href="https://www.twitch.tv/horizonsendgaming" target="_blank">Twitch</a> | <a href="https://www.youtube.com/user/horizonsendgaming" target="_blank">YouTube</a> | <a href="https://www.dropbox.com/sh/8zpffok4joky59p/AACLe425qbiZlwTgEw1BKRMaa?dl=0" target="_blank">Press Kit</a></p>
       <small>&copy; 2018 Horizon's End, Inc. All Rights Reserved.</small>
     </footer>
-    <script>
-	const target = new Date('June 22, 2018 15:00:00').getTime() // Set countdown date
-
-	const countdown = setInterval(() => { // Update every second
-
-	  const now = new Date().getTime(),
-		count = target - now,
-		days = Math.floor(count / (1000 * 60 * 60 * 24)),
-		hours = Math.floor((count % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-		minutes = Math.floor((count % (1000 * 60 * 60)) / (1000 * 60)),
-		seconds = Math.floor((count % (1000 * 60)) / 1000)
-
-	  document.getElementById('countdown').innerHTML = days + ':' + hours + ':' + minutes + ':' + seconds
-
-	  if (count < 0) {
-	    clearInterval(countdown)
-	    document.getElementById('countdown').innerHTML = 'Buy now on Steam'
-	  }
-	}, 1000)
-    </script>
     <script>
 	(function() {
 	  const toggler = document.getElementsByClassName('toggle-fold');
