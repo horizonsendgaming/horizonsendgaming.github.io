@@ -290,6 +290,9 @@ nav a:last-child {
   }
 }
 @media only screen and (max-width:800px) {
+  main {
+    padding: 0 10px;
+  }
   #header > div {
     width: 100%;
   }
@@ -340,6 +343,9 @@ nav a:last-child {
   }
 }
 @media only screen and (max-width:500px) {
+  main {
+    padding: 0 5px;
+  }
   nav {
     display: none;
   }
