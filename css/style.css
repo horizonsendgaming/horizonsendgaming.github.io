@@ -19,11 +19,6 @@ html, body {
   width: 1280px;
   margin: 0 auto;
 }
-[rel=logo] {
-  color: white;
-  font-weight: lighter;
-  font-size: 18px; 
-}
 #header > div h1 {
   display: inline-block;
   width: 300px;
@@ -37,6 +32,11 @@ a, a:link, a:visited, a:active {
 }
 a:hover {
   text-decoration: underline;
+}
+a[rel=logo] {
+  color: white;
+  font-weight: lighter;
+  font-size: 18px; 
 }
 nav {
   float: right;
