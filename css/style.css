@@ -21,6 +21,9 @@ html, body {
 }
 #header > div h1 {
   display: inline-block;
+  color: white;
+  font-weight: lighter;
+  font-size: 18px;
   width: 300px;
 }
 .logo {
