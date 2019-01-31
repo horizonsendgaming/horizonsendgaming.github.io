@@ -76,6 +76,47 @@ nav a:last-child {
 }
 
 /**
+ * Hero
+ */
+#hero {
+  margin-bottom: 40px;
+}
+.side-bar {
+  width: 400px;
+}
+.side-bar > img {
+  width: 400px;
+  margin-bottom: 40px;
+  border: 1px solid gray;
+}
+a.side-bar-btn {
+  display: block;
+  width: 100%;
+  color: white;
+  padding: 40px 20px 49px;
+  background: #2b2727;
+  border: 1px solid #111;
+  font-size: 13px;
+  text-decoration: none;
+}
+.side-bar-btn:hover {
+  background: #333;
+}
+.side-bar-btn img {
+  display: block;
+  width: 250px;
+  margin: 0 auto 30px auto;
+}
+.side-bar-btn p {
+  text-align: center;
+  padding: 0 40px;
+}
+.kickstarter {
+  border: 1px solid #777;
+  margin-right: 40px;
+}
+
+/**
  * Showcase
  */
  #showcase {
@@ -114,10 +155,7 @@ nav a:last-child {
 .bandcamp-widget {
   display: block;
   width: 100%;
-  height: 181px;
-  /* original height w/o btn
   height: 290px;
-  */
   border: none;
 }
 
