@@ -296,6 +296,20 @@ a.side-bar-btn {
   .sections {
     width: 800px;
   }
+  .kickstarter {
+    margin-right: 0;
+  }
+  .side-bar > img {
+    width: 380px;
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+  a.side-bar-btn {
+    width: 380px;
+  }
+  a.side-bar-btn img {
+    width: 280px;
+  }
   #showcase {
     margin-bottom: 20px;
   }
@@ -303,6 +317,7 @@ a.side-bar-btn {
     margin-right: 0;
   }
   .side-bar {
+    display: flex;
     margin: 40px 0 0;
     width: 100%;
   }
@@ -310,7 +325,6 @@ a.side-bar-btn {
     width: 380px;
     margin-right: 40px;
     margin-bottom: 0;
-    float: left;
   }
   .bandcamp-widget {
     width: 380px;
@@ -356,8 +370,17 @@ a.side-bar-btn {
   .sections {
     width: 100%;
   }
-  .trailer, .side-bar, .steam-widget, .bandcamp-widget {
+  .trailer, 
+  .side-bar, 
+  .side-bar > img,
+  a.side-bar-btn,
+  .steam-widget, 
+  .bandcamp-widget {
+    display: block;
     width: 100%;
+  }
+  .side-bar > img {
+    margin-bottom: 40px;
   }
   #showcase {
     margin-bottom: 40px;
