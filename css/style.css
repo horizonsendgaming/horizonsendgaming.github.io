@@ -62,7 +62,10 @@ nav a:last-child {
 }
 #footer > img {
   width: 200px;
-  margin: 20px 0;
+  margin-bottom: 40px;
+}
+#footer p {
+  border-top: 1px solid gray; 
 }
 #footer a {
   font-size: 14px;
