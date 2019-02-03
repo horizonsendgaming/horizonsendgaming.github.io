@@ -60,6 +60,10 @@ nav a:last-child {
   background: black;
   color: white;
 }
+#footer > img {
+  width: 200px;
+  margin: 20px 0;
+}
 #footer a {
   font-size: 14px;
   color: #999;
