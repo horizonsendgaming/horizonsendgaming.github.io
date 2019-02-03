@@ -64,16 +64,14 @@ nav a:last-child {
   width: 200px;
   margin-bottom: 40px;
 }
-#footer p {
-  border-top: 1px solid gray; 
-}
+
 #footer a {
   font-size: 14px;
   color: #999;
 }
 #footer small {
   display: block;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 .sections {
   display: flex;
