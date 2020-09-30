@@ -227,7 +227,7 @@ a.side-bar-btn {
  **/
  
 #reviews div {
-  width: 400px;
+  width: 200px;
   flex-direction: column;
   justify-content: center;
 }
