@@ -229,7 +229,7 @@ a.side-bar-btn {
 #reviews {
   display: flex;
   flex-flow: row no-wrap;
-
+  height: 450px;
   justify-content: space-between;
   margin: 0 auto 40px auto;
   overflow: hidden;
