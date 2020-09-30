@@ -226,13 +226,14 @@ a.side-bar-btn {
  * Reviews
  **/
  
-#reviews {
- display: flex;
-  margin-bottom: 40px;
+#reviews div {
+  width: 400px;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#reviews div {
- justify-content: space-between;
+#reviews div img {
+  width: 100%;
 }
 
 
