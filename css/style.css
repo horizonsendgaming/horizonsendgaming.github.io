@@ -231,15 +231,15 @@ a.side-bar-btn {
   flex-flow: row wrap;
   height: 300px;
   justify-content: space-between;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 400px auto;
   overflow: hidden;
   width: 1280px;
+  
+  border: 1px dashed red;
 }
  
 #reviews div {
   width: 400px;
-
-  border: 1px dashed red;
 }
 
 #reviews div img {
