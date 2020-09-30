@@ -227,7 +227,7 @@ a.side-bar-btn {
  **/
 
 #reviews {
- border: 1px dashed red; 
+  margin-bottom: 40px;
 }
  
 #reviews div {
@@ -235,13 +235,11 @@ a.side-bar-btn {
   flex-direction: column;
   justify-content: center;
   
-  border: 1px dashed orange; 
+  border: 1px dashed red; 
 }
 
 #reviews div img {
   width: 100%;
-  
-  border: 1px dashed green; 
 }
 
 
