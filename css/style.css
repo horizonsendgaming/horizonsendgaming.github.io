@@ -223,6 +223,20 @@ a.side-bar-btn {
 }
 
 /**
+ * Reviews
+ **/
+ 
+#reviews {
+ flex: row;
+  margin-bottom: 40px;
+}
+
+#reviews div {
+ 
+}
+
+
+/**
  * Media
  */
 #media h3 {
