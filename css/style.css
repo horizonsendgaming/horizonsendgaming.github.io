@@ -227,12 +227,12 @@ a.side-bar-btn {
  **/
  
 #reviews {
- flex: row;
+ display: flex;
   margin-bottom: 40px;
 }
 
 #reviews div {
- 
+ justify-content: space-between;
 }
 
 
