@@ -10,7 +10,6 @@ html, body {
 }
 #header {
   width: 100%;
-  margin-bottom: 40px;
   background: black;
   border-top: 1px solid red;
   overflow: hidden;
@@ -125,7 +124,7 @@ a.side-bar-btn {
  * Showcase
  */
  #showcase {
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 .trailer {
   border: 1px solid #777;
