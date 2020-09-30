@@ -232,9 +232,7 @@ a.side-bar-btn {
  
 #reviews div {
   width: 400px;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-right: 0;
+  
   border: 1px dashed red;
 }
 
