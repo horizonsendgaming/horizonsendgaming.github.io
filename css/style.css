@@ -227,11 +227,12 @@ a.side-bar-btn {
  **/
 
 #reviews {
-  margin-bottom: 40px;
+  justify-content: space-between;
 }
  
 #reviews div {
   width: 400px;
+  flex-flow: column no-wrap;
   
   border: 1px dashed red;
 }
