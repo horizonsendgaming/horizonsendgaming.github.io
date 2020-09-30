@@ -124,7 +124,8 @@ a.side-bar-btn {
  * Showcase
  */
  #showcase {
-  margin: 40px auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 .trailer {
   border: 1px solid #777;
