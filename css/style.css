@@ -121,6 +121,8 @@ a.side-bar-btn {
 }
 
 .topsection {
+  display: flex;
+  justify-content: center;
   height: 100vh;
   position: relative;
 }
