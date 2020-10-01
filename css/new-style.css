@@ -53,6 +53,9 @@ nav a, nav a:link, nav a:visited, nav a:active {
 nav a:last-child {
   margin-right: 0;
 }
+nav a:hover {
+ text-decoration: underline; 
+}
 #footer {
   text-align: center;
   width: 100%;
@@ -136,7 +139,7 @@ a.side-bar-btn {
 }
 
 .overlay {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.3);
   bottom: 0;
   cursor: pointer;
   display: block;
