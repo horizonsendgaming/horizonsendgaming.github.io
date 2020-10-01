@@ -120,6 +120,16 @@ a.side-bar-btn {
   margin-right: 40px;
 }
 
+.topsection {
+  background: black;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+.overlay {
+  
+}
+
 /**
  * Showcase
  */
