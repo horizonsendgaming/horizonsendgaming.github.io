@@ -122,13 +122,16 @@ a.side-bar-btn {
 }
 
 .topsection {
-  align-items: center;
   display: flex;
-  flex-direction: column;
   height: 100vh;
   justify-content: center;
   overflow: hidden;
   position: relative;
+}
+
+.topsection div img {
+  position: absolute;
+  top: 0; 
 }
 .overlay {
   position: absolute;
