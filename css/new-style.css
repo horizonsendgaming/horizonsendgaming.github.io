@@ -134,6 +134,7 @@ a.side-bar-btn {
   display: flex;
   height: 100vh;
   justify-content: center;
+  margin-bottom: 40px;
   overflow: hidden;
   position: relative;
 }
