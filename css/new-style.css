@@ -139,7 +139,7 @@ a.side-bar-btn {
 }
 
 .overlay {
-  /* background-color: rgba(0,0,0,0.3); */
+  background-color: rgba(0,0,0,0.3);
   background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
   bottom: 0;
   cursor: pointer;
