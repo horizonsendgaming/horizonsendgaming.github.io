@@ -13,6 +13,7 @@ html, body {
   background: black;
   border-top: 1px solid red;
   overflow: hidden;
+  z-index: 3;
 }
 #header > div {
   width: 1280px;
