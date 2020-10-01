@@ -129,11 +129,6 @@ a.side-bar-btn {
   position: relative;
 }
 
-.topsection div img {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 .overlay {
   position: absolute;
   display: block; /* Hidden by default */
