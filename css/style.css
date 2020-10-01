@@ -131,7 +131,8 @@ a.side-bar-btn {
 
 .topsection div img {
   position: absolute;
-  top: 0; 
+  top: 0;
+  left: 0;
 }
 .overlay {
   position: absolute;
