@@ -10,9 +10,10 @@ html, body {
 }
 #header {
   width: 100%;
-  background: black;
+  background: none;
   border-top: 1px solid red;
   overflow: hidden;
+  position: absolute;
   z-index: 3;
 }
 #header > div {
