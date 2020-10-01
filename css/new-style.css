@@ -20,6 +20,8 @@ html, body {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+  
+  border: 1px dashed red;
 }
 #header > div h1 {
   display: inline-block;
