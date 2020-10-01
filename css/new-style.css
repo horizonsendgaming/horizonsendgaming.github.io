@@ -136,7 +136,7 @@ a.side-bar-btn {
 }
 
 .overlay {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.2);
   bottom: 0;
   cursor: pointer;
   display: block;
