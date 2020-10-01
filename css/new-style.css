@@ -187,7 +187,7 @@ a.side-bar-btn {
  */
 .article {
   width: 400px;
-  margin: 0 40px 40px 0;
+  margin: 40px 40px 40px 0;
   background: white;
 }
 .article:nth-of-type(3n) {
