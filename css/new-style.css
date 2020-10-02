@@ -84,9 +84,11 @@ nav .dropdown .menu .item {
   height: 100%;
   width: 100%;
 }
+
+/*
 nav .dropdown .menu .item:last-child {
   border-bottom: none; 
-}
+} */
 
 
 nav .dropdown .menu .item a {
