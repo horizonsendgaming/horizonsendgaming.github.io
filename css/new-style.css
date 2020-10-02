@@ -139,17 +139,19 @@ a.side-bar-btn {
   position: relative;
 }
 
-.topsection div {
-  border: 1px dashed red; 
-}
-
 .topsection div .cta {
   color: white;
-  font-size: 28px;
+  font-size: 18px;
   position: absolute;
   top: 60%;
   left: 40%;
   z-index: 4;
+}
+
+.topsection div .cta div {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .overlay {
