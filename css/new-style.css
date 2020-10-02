@@ -59,8 +59,12 @@ nav a:hover {
  text-decoration: underline; 
 }
 
-nav .dropdown {
-  
+nav .dropdown .text {
+  color: white;
+}
+
+nav .dropdown .text:hover {
+  text-decoration: underline; 
 }
 
 nav .dropdown .menu {
@@ -74,11 +78,13 @@ nav .dropdown .menu {
 }
 
 nav .dropdown:hover .menu {
+  border-radius: 5px;
   display: block;
+  padding: 5px;
 }
 
 nav .dropdown .menu .item {
-  
+  color: black;
 }
 
 
