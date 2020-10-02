@@ -138,8 +138,14 @@ a.side-bar-btn {
   overflow: hidden;
   position: relative;
 }
+
+.topsection div {
+  border: 1px dashed red; 
+}
+
 .topsection div .cta {
   color: white;
+  font-size: 28px;
   position: absolute;
   top: 50%;
   left: 50%;
