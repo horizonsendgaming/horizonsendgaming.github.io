@@ -61,6 +61,7 @@ nav a:hover {
 
 nav .dropdown .text {
   color: white;
+  font-size: 18px;
 }
 
 nav .dropdown .text:hover {
