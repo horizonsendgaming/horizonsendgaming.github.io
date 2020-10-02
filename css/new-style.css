@@ -56,6 +56,32 @@ nav a:last-child {
 nav a:hover {
  text-decoration: underline; 
 }
+
+nav .dropdown {
+  
+}
+
+nav .dropdown .menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+nav .dropdown:hover .menu {
+  display: block;
+}
+
+nav .dropdown .menu .item {
+  
+}
+
+
+
+
 #footer {
   text-align: center;
   width: 100%;
@@ -141,9 +167,9 @@ a.side-bar-btn {
   color: white;
   font-size: 18px;
   position: absolute;
+  text-align: center;
   text-stroke: 1px black;
   top: 60%;
-  left: 40%;
   z-index: 4;
 }
 
