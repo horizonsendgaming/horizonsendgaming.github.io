@@ -138,12 +138,17 @@ a.side-bar-btn {
   overflow: hidden;
   position: relative;
 }
+.topsection div .cta {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 
 .overlay {
   background-color: rgba(0,0,0,0.3);
   background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
   bottom: 0;
-  cursor: pointer;
   display: block;
   height: 100vh;
   left: 0;
