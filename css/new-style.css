@@ -87,7 +87,9 @@ nav .dropdown:hover .menu {
   display: block;
 }
 
-
+nav .dropdown .menu .item {
+  height: 56px;
+}
 /* nav .dropdown .menu .item:last-child {
   border-bottom: none; 
 } */
