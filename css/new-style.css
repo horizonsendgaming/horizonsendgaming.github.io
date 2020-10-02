@@ -96,6 +96,10 @@ nav .dropdown .menu .item {
   border-bottom: none; 
 } */
 
+nav .dropdown .menu .item:hover {
+  background: #eee; 
+}
+
 nav .dropdown .menu .item a {
   color: black;
 }
