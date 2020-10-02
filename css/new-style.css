@@ -71,7 +71,7 @@ nav .dropdown .menu {
   display: none;
   height: 180px;
   margin: 0;
-  width: 215px;
+  width: 220px;
   z-index: 3;
 }
 
@@ -81,7 +81,7 @@ nav .dropdown:hover .menu {
 }
 
 nav .dropdown .menu .item {
-  height: 65px;
+  height: 60px;
   width: 100%;
 }
 
