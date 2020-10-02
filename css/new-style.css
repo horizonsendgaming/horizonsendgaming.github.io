@@ -128,8 +128,6 @@ a.side-bar-btn {
 
 
 
-
-
 .topsection {
   display: flex;
   height: 100vh;
@@ -143,12 +141,13 @@ a.side-bar-btn {
   color: white;
   font-size: 18px;
   position: absolute;
+  text-stroke: 1px black;
   top: 60%;
   left: 40%;
   z-index: 4;
 }
 
-.topsection div .cta div {
+.topsection div .cta div:first-child {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
