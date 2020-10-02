@@ -189,6 +189,10 @@ a.side-bar-btn {
   width: 100%;
 }
 
+.topsection div img {
+  width: 100%; 
+}
+
 .topsection div .cta {
   color: white;
   font-size: 18px;
