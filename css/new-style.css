@@ -103,7 +103,7 @@ nav .dropdown .menu .item:hover {
 nav .dropdown .menu .item a {
   color: black;
   font-size: 16px;
-  font-weight: bold;
+  text-transform: uppercase;
 }
 nav .dropdown .menu .item a:hover {
   text-decoration: none; 
