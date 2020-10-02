@@ -82,7 +82,7 @@ nav .dropdown .menu {
 nav .dropdown:hover .menu {
   border-radius: 0 0 5px 5px;
   display: block;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 nav .dropdown .menu .item {
@@ -90,9 +90,9 @@ nav .dropdown .menu .item {
   border-bottom: 1px solid #ccc;
 }
 
-nav .dropdown .menu .item:last-child {
+/* nav .dropdown .menu .item:last-child {
   border-bottom: none; 
-}
+} */
 
 nav .dropdown .menu .item a {
   color: black;
