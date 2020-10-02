@@ -81,8 +81,7 @@ nav .dropdown:hover .menu {
 }
 
 nav .dropdown .menu .item {
-  height: 53px;
-  padding: 25px 0 0 0;
+  height: 100%;
   width: 100%;
 }
 nav .dropdown .menu .item:last-child {
