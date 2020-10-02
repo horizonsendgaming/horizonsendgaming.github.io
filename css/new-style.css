@@ -172,7 +172,7 @@ a.side-bar-btn {
   text-align: center;
  
   top: 60%;
-  z-index: 4;
+  z-index: 99;
 }
 
 .topsection div .cta div:first-child {
