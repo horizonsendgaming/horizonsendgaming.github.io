@@ -80,10 +80,10 @@ nav .dropdown .menu {
 nav .dropdown:hover .menu {
   border-radius: 5px;
   display: block;
-  padding: 5px;
+  padding: 10px;
 }
 
-nav .dropdown .menu .item {
+nav .dropdown .menu .item a {
   color: black;
 }
 
@@ -174,9 +174,9 @@ a.side-bar-btn {
 .topsection div .cta {
   color: white;
   font-size: 18px;
+  left: 40%;
   position: absolute;
   text-align: center;
- 
   top: 60%;
   z-index: 99;
 }
