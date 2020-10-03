@@ -225,8 +225,13 @@ a.side-bar-btn {
   
 .topsection div .cta .purchase-game a {
   color: white;
-  
-  border: 1px dashed red;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.topsection div .cta .purchase-game a:hover {
+  color: gray;
+  border: 2px solid gray;
 }
 
 
