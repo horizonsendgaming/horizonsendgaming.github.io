@@ -217,6 +217,7 @@ a.side-bar-btn {
   color: white;
   border: 2px solid white;
   border-radius: 5px;
+  padding: 10px 20px;
 }
 
 .topsection div .cta .purchase-game a:hover {
