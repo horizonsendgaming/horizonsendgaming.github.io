@@ -245,11 +245,12 @@
       <small>&copy; 2018 Horizon's End, Inc. All Rights Reserved.</small>
     </footer>
     <script>
+      const player = document.getElementById('trailer')
       const openModal = () => {
         document.getElementById('myModal').style.display = 'block'
+        player.playVideo()
       }
       const closeModal = () => {
-        const player = document.getElementById('trailer')
         player.stopVideo()
         document.getElementById('myModal').style.display = 'none'
       }
