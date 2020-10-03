@@ -195,17 +195,17 @@ a.side-bar-btn {
 
 .topsection div .cta {
   color: white;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   left: 40%;
   position: absolute;
   text-align: center;
-  top: 43%;
+  top: 44%;
   z-index: 99;
 }
 
 .topsection div .cta div:first-child {
-  font-size: 28px;
+  font-size: 32px;
   margin-bottom: 20px;
 }
 
