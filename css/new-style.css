@@ -412,6 +412,7 @@ a.side-bar-btn {
 #external-media {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
   width: 100%; 
 }
 #external-media div {
