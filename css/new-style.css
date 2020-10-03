@@ -196,6 +196,11 @@ a.side-bar-btn {
   margin-bottom: 20px;
 }
 
+.topsection div .cta .play-button {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
 .topsection div .cta .play-button i {
   background: black;
   cursor: pointer;
