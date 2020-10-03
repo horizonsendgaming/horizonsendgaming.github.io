@@ -391,7 +391,7 @@ a.side-bar-btn {
   flex-flow: row no-wrap;
   height: 420px;
   justify-content: space-between;
-  margin: 0 auto 40px auto;
+  margin: 40px auto 40px auto;
   overflow: hidden;
   width: 1280px;
 }
