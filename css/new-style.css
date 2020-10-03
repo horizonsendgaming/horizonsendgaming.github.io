@@ -223,6 +223,7 @@ a.side-bar-btn {
 }
 .topsection div .cta .purchase-game a {
   color: white;
+  background-color: rgba(255,255,255,0.5);
   border: 2px solid white;
   border-radius: 5px;
   padding: 10px 20px;
