@@ -415,9 +415,7 @@ a.side-bar-btn {
   width: 100%; 
 }
 #external-media div {
-  width: 620px; 
-  
-  border: 1px dashed red;
+  width: 620px;
 }
 
 #external-media div a,
