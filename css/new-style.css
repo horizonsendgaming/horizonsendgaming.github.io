@@ -208,6 +208,11 @@ a.side-bar-btn {
   font-size: 100px;
 }
 
+#trailer {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
 .topsection div .cta .purchase-game {
   margin-top: 200px;
