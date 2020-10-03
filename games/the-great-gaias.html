@@ -245,16 +245,24 @@
       <small>&copy; 2018 Horizon's End, Inc. All Rights Reserved.</small>
     </footer>
     <script>
+      
+      function onPlayerReady(event) {
+        event.target.playVideo()
+      }
+      function onPlayerStateChange(event) {
+        console.log('Youtube player state changed:', event)
+      }
+      
       var player;
       function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          videoId: 'K0JwHzIXu68',
+        player = new YT.Player('trailer', {
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
           }
-        });
+        })
       }
+      
       const openModal = () => {
         document.getElementById('myModal').style.display = 'block'
         player.playVideo()
