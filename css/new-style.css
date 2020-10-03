@@ -418,7 +418,8 @@ a.side-bar-btn {
   width: 600px; 
 }
 
-#external-media div img {
+#external-media div a,
+#external-media div a img {
   width: 100%; 
 }
 .steam-widget {
