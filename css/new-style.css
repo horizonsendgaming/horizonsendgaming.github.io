@@ -200,6 +200,7 @@ a.side-bar-btn {
   left: 40%;
   position: absolute;
   text-align: center;
+  text-shadow: 1px 1px black;
   top: 44%;
   z-index: 99;
 }
