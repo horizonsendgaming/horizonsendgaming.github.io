@@ -245,10 +245,16 @@
     </footer>
     <script>
     (function () {
+      const openModal = () => {
+        document.getElementById('myModal').style.display = 'block'
+      }
+      const closeModal = () => {
+        document.getElementById('myModal').style.display = 'none'
+      }
       const items = document.getElementsByClassName('media-item')
       Object.keys(items).forEach(key => items[key].addEventListener('click', function() {
-        this.classList.toggle("show-media-item")
-        this.getElementsByTagName("figcaption")[0].classList.toggle("show-caption")
+        this.classList.toggle('show-media-item')
+        this.getElementsByTagName('figcaption')[0].classList.toggle('show-caption')
       }))
     })()
     </script>
