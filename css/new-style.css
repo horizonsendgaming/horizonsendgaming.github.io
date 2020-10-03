@@ -245,7 +245,6 @@ a.side-bar-btn {
 /**
  * Modal
  **/
-
 .modal {
   display: none;
   position: fixed;
@@ -258,8 +257,6 @@ a.side-bar-btn {
   overflow: auto;
   background-color: black;
 }
-
-/* Modal Content */
 .modal-content {
   position: relative;
   background-color: #fefefe;
@@ -268,8 +265,6 @@ a.side-bar-btn {
   width: 90%;
   max-width: 1200px;
 }
-
-/* The Close Button */
 .close {
   color: white;
   position: absolute;
@@ -278,14 +273,12 @@ a.side-bar-btn {
   font-size: 35px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
   color: #999;
   text-decoration: none;
   cursor: pointer;
 }
-
 
 
 /**
@@ -417,6 +410,7 @@ a.side-bar-btn {
  */
 
 #external-media {
+  display: flex;
   width: 100%; 
 }
 #external-media div {
