@@ -80,9 +80,7 @@
             <div id="myModal" class="modal">
               <span class="close cursor" onclick="closeModal()">&times;</span>
               <div class="modal-content">
-                <iframe class="trailer" src="https://www.youtube.com/embed/K0JwHzIXu68" 
-                  width="840" 
-                  height="500" 
+                <iframe id="trailer" src="https://www.youtube.com/embed/K0JwHzIXu68?enablejsapi=1" 
                   frameborder="0" 
                   allow="autoplay; encrypted-media" 
                   allowfullscreen>
@@ -249,6 +247,8 @@
         document.getElementById('myModal').style.display = 'block'
       }
       const closeModal = () => {
+        const player = document.getElementById('trailer')
+        player.stopVideo()
         document.getElementById('myModal').style.display = 'none'
       }
       (function () {
