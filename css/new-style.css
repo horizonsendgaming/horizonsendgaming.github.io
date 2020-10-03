@@ -101,7 +101,8 @@ nav .dropdown .menu .item a {
 }
 nav .dropdown .menu .item a:hover {
   background-color: rgba(255,255,255,0.5);
-  text-decoration: none; 
+  text-decoration: none;
+  text-shadow: 1px 1px black;
 }
 
 
