@@ -411,12 +411,12 @@ a.side-bar-btn {
 
 #external-media {
   display: flex;
+  justify-content: space-between;
   width: 100%; 
 }
 #external-media div {
   width: 600px; 
 }
-
 .steam-widget {
   display: block;
   height: 192px;
