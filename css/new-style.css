@@ -196,17 +196,21 @@ a.side-bar-btn {
 .topsection div .cta {
   color: white;
   font-size: 18px;
+  font-weight: bold;
   left: 40%;
   position: absolute;
   text-align: center;
-  top: 42%;
+  top: 43%;
   z-index: 99;
 }
 
 .topsection div .cta div:first-child {
   font-size: 28px;
-  font-weight: bold;
   margin-bottom: 20px;
+}
+
+.topsection div .cta div:last-child {
+ 
 }
 
 .overlay {
