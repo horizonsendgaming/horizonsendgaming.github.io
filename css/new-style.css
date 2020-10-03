@@ -183,11 +183,12 @@ a.side-bar-btn {
   color: white;
   font-size: 22px;
   font-weight: bold;
-  left: 40%;
+  /* left: 40%; */
   position: absolute;
   text-align: center;
   text-shadow: 1px 1px black;
   top: 44%;
+  width: 100%;
   z-index: 99;
 }
 
@@ -200,15 +201,13 @@ a.side-bar-btn {
 
 
 .topsection div .cta .play-button {
+  text-align: center;
   width: 100%;
 }
 
 .topsection div .cta .play-button i {
-  background: black;
-  border-radius: 25px;
   cursor: pointer;
   font-size: 100px;
-  text-align: center;
   text-shadow: none;
 }
 
