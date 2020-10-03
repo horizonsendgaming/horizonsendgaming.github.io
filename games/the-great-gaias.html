@@ -75,16 +75,19 @@
           <div class="overlay"></div>
           <div class="cta">
             <div class="play-button">
-              <i class="fa fa-play-circle-o"></i>
+              <i class="fa fa-play-circle-o" onclick="openModal()"></i>
             </div>
-            <div class="trailer" style="display: none;">
-              <iframe class="trailer" src="https://www.youtube.com/embed/K0JwHzIXu68" 
-                width="840" 
-                height="500" 
-                frameborder="0" 
-                allow="autoplay; encrypted-media" 
-                allowfullscreen>
-              </iframe>
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+              <div class="modal-content">
+                <iframe class="trailer" src="https://www.youtube.com/embed/K0JwHzIXu68" 
+                  width="840" 
+                  height="500" 
+                  frameborder="0" 
+                  allow="autoplay; encrypted-media" 
+                  allowfullscreen>
+                </iframe>
+              </div>
             </div>
             <div class="purchase-game">
               <a href="https://store.steampowered.com/app/818610/The_Great_Gaias/">
