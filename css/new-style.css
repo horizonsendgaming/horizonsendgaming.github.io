@@ -196,18 +196,24 @@ a.side-bar-btn {
   margin-bottom: 20px;
 }
 
+
+
+
 .topsection div .cta .play-button {
-  border-radius: 50px;
-  overflow: hidden;
+  width: 100%;
 }
 
 .topsection div .cta .play-button i {
   background: black;
+  border-radius: 25px;
   cursor: pointer;
   font-size: 100px;
   text-align: center;
   text-shadow: none;
 }
+
+
+
 
 .overlay {
   background-color: rgba(0,0,0,0.3);
