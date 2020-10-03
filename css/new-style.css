@@ -50,20 +50,16 @@ nav a, nav a:link, nav a:visited, nav a:active {
   text-decoration: none;
   margin-right: 30px;
 }
-
 nav a:hover {
  text-decoration: underline; 
 }
-
 nav .dropdown .text {
   color: white;
   font-size: 18px;
 }
-
 nav .dropdown .text:hover {
   text-decoration: underline; 
 }
-
 nav .dropdown .menu {
   background-color: #f9f9f9;
   border-radius: 0 0 5px 5px;
@@ -74,23 +70,14 @@ nav .dropdown .menu {
   width: 218px;
   z-index: 3;
 }
-
 nav .dropdown:hover .menu {
   background-color: rgba(255,255,255,0.5);
   display: block;
 }
-
 nav .dropdown .menu .item {
   height: 60px;
   width: 100%;
 }
-
-/*
-nav .dropdown .menu .item:last-child {
-  border-bottom: none; 
-} */
-
-
 nav .dropdown .menu .item a {
   border-bottom: 1px solid #ccc;
   display: block;
@@ -105,8 +92,6 @@ nav .dropdown .menu .item a:hover {
   text-decoration: none;
 }
 
-
-
 #footer {
   text-align: center;
   width: 100%;
@@ -120,7 +105,6 @@ nav .dropdown .menu .item a:hover {
   width: 200px;
   margin-bottom: 40px;
 }
-
 #footer a {
   font-size: 14px;
   color: #999;
@@ -212,8 +196,9 @@ a.side-bar-btn {
   margin-bottom: 20px;
 }
 
-.topsection div .cta div:last-child {
- 
+.topsection div .cta .play-button i {
+  cursor: pointer;
+  font-size: 50px;
 }
 
 .overlay {
