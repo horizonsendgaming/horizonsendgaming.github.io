@@ -385,7 +385,7 @@ a.side-bar-btn {
 
 /**
  * Reviews
- **/
+ */
 #reviews {
   display: flex;
   flex-flow: row no-wrap;
@@ -416,6 +416,10 @@ a.side-bar-btn {
 }
 #external-media div {
   width: 600px; 
+}
+
+#external-media div img {
+  width: 100%; 
 }
 .steam-widget {
   display: block;
