@@ -393,7 +393,6 @@ a.side-bar-btn {
 /**
  * Reviews
  **/
-
 #reviews {
   display: flex;
   flex-flow: row no-wrap;
@@ -402,10 +401,8 @@ a.side-bar-btn {
   margin: 0 auto 40px auto;
   overflow: hidden;
   width: 1280px;
-  
-  border: 1px dashed red;
 }
- 
+
 #reviews div {
   height: 100%;
   width: 400px;
@@ -416,13 +413,12 @@ a.side-bar-btn {
 }
 
 /**
- *
+ * External Media
  */
 
 #external-media {
   width: 100%; 
 }
-
 #external-media div {
   width: 600px; 
 }
