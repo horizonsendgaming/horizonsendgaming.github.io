@@ -80,13 +80,12 @@
             <div id="myModal" class="modal">
               <span class="close cursor" onclick="closeModal()">&times;</span>
               <div class="modal-content">
-                <iframe id="trailer" src="https://www.youtube.com/embed/K0JwHzIXu68?enablejsapi=1&origin="https://horizonsend.com"
+                <embed id="trailer" src="https://www.youtube.com/embed/K0JwHzIXu68?origin="https://horizonsend.com&enablejsapi=1&version=3"
                   width="838"
                   height="498"
-                  frameborder="0"
-                  allow="autoplay; encrypted-media"
-                  allowfullscreen>
-                </iframe>
+                  quality="high"
+                  allowscriptaccess="always"
+                  allowfullscreen="true">
               </div>
             </div>
             <div class="purchase-game">
@@ -245,24 +244,7 @@
       <small>&copy; 2018 Horizon's End, Inc. All Rights Reserved.</small>
     </footer>
     <script>
-      
-      function onPlayerReady(event) {
-        event.target.playVideo()
-      }
-      function onPlayerStateChange(event) {
-        console.log('Youtube player state changed:', event)
-      }
-      
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('trailer', {
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        })
-      }
-      
+      const player = document.getElementById('trailer')
       const openModal = () => {
         document.getElementById('myModal').style.display = 'block'
         player.playVideo()
