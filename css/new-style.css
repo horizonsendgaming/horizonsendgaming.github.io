@@ -213,11 +213,12 @@ a.side-bar-btn {
 
 
 .topsection div .cta .purchase-game {
-  color: white;
   margin-top: 200px;
 }
   
-
+.topsection div .cta .purchase-game a {
+  color: white;
+}
 
 
 .overlay {
