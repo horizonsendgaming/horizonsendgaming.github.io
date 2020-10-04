@@ -361,11 +361,11 @@ nav .dropdown .menu .item a:hover {
   .mobile-menu {
     color: white;
     display: block;
-    margin-left: 20px;
     float: right;
+    font-size: 40px;
+    margin: 40px 20px 0 0;
+    
     z-index: 9999;
-
-    border: 5px dashed red;
   }
 
   .overlay {
