@@ -166,7 +166,7 @@ a.side-bar-btn {
 .topsection {
   background: black;
   display: flex;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
   margin-bottom: 40px;
   overflow: hidden;
