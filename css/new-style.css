@@ -533,15 +533,7 @@ a.side-bar-btn {
     margin: 40px 0 0;
     width: 100%;
   }
-  .steam-widget {
-    width: 380px;
-    margin-right: 40px;
-    margin-bottom: 0;
-  }
-  .bandcamp-widget {
-    width: 380px;
-    height: 170px;
-  }
+
   .article {
     width: 380px;
   }
@@ -569,10 +561,7 @@ a.side-bar-btn {
   #external-media div:first-child {
     margin-bottom: 40px;
   }
-  .bandcamp-widget {
-    margin: 0;
-  }
-  
+
   
     /*=================================================================================================
   =================================================================================================*/
