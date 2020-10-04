@@ -321,6 +321,10 @@ nav .dropdown .menu .item a:hover {
   #header > div {
     width: 100%;
   }
+  #header > div h1 {
+    display: inline-block;
+    width: 200px;
+  }
   .logo {
     width: 200px;
   }
