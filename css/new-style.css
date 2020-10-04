@@ -562,7 +562,7 @@ a.side-bar-btn {
     margin-bottom: 40px;
   }
   .bandcamp-widget {
-    
+    width: 100%;
     border: 1px dashed red; 
   }
   
