@@ -50,6 +50,9 @@ nav a, nav a:link, nav a:visited, nav a:active {
   text-decoration: none;
   margin-right: 30px;
 }
+nav > span {
+  margin-right: 30px;
+}
 nav a:hover {
  text-decoration: underline; 
 }
