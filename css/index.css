@@ -358,7 +358,7 @@ nav .dropdown .menu .item a:hover {
     color: white;
     display: block;
     margin-left: 20px;
-
+    float: right;
     z-index: 9999;
 
     border: 5px dashed red;
