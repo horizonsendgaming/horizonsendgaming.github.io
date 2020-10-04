@@ -400,7 +400,7 @@ a.side-bar-btn {
 #external-media {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin: 40px 0;
   width: 100%; 
 }
 #external-media div {
