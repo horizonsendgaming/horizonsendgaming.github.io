@@ -562,8 +562,8 @@ a.side-bar-btn {
     margin-bottom: 40px;
   }
   .bandcamp-widget {
-    margin: 0;
-    width: 100%;
+    
+    border: 1px dashed red; 
   }
   
     /*=================================================================================================
