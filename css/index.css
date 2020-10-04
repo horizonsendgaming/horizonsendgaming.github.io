@@ -345,8 +345,11 @@ nav .dropdown .menu .item a:hover {
   #header {
     background: black;
   }
+  #header > div {
+    padding: 0 20px;
+  }
   .topsection {
-    top: 100px;
+    display: none;
   }
   .overlay {
     display: none;
