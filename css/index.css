@@ -28,6 +28,9 @@ html, body {
 .logo {
   width: 300px;
 }
+.mobile-menu {
+  display: none;
+}
 a, a:link, a:visited, a:active {
   color: red;
   text-decoration: none;
@@ -350,6 +353,12 @@ nav .dropdown .menu .item a:hover {
   #header > div {
     padding: 0 20px;
   }
+
+  .mobile-menu {
+    display: block;
+    margin-left: 20px;
+  }
+
   .overlay {
     display: none;
   }
