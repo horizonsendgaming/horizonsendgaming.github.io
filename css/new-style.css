@@ -430,7 +430,7 @@ a.side-bar-btn {
  * Media
  */
 #media {
-  margin: 40px 0 0 0; 
+  margin-top: 40px; 
 }
 #media h3 {
   font-size: 22px;
