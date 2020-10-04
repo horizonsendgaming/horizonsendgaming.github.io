@@ -55,6 +55,7 @@ nav a:hover {
 }
 nav .dropdown {
   display: inline-block;
+  height: 100%;
   position: relative;
 }
 nav .dropdown .text {
