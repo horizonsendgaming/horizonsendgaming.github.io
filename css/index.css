@@ -355,6 +355,7 @@ nav .dropdown .menu .item a:hover {
   }
 
   .mobile-menu {
+    color: white;
     display: block;
     margin-left: 20px;
   }
