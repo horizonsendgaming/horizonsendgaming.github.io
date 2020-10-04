@@ -551,7 +551,9 @@ a.side-bar-btn {
   .article:nth-of-type(2n) {
     margin-right: 0;
   }
-  
+  #external-media {
+    display: block;
+  }
   #external-media div {
     width: 100%;
   }
