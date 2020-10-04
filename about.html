@@ -1,3 +1,132 @@
-<html>
-Working on it.
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Horizon's End is a video game design company focused on delivering old school RPG's to the modern age gamer and to lifelong lovers of the genre. We aim to provide an unforgettable gaming experience to people around the globe.">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.horizonsend.com">
+    <meta property="og:site_name" content="Horizon's End">
+    <meta property="og:title" content="Horizon's End">
+    <meta property="og:description" content="Horizon's End is a video game design company focused on delivering old school RPG's to the modern age gamer and to lifelong lovers of the genre. We aim to provide an unforgettable gaming experience to people around the globe.">
+    <meta property="og:image" content="https://www.horizonsend.com/images/logo-black.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="horizonsend">
+    <meta name="twitter:site" content="horizonsend">
+    <meta name="twitter:domain" content="Horizon's End">
+    <meta name="twitter:title" content="Horizon's End">
+    <meta name="twitter:description" content="Horizon's End is a video game design company focused on delivering old school RPG's to the modern age gamer and to lifelong lovers of the genre. We aim to provide an unforgettable gaming experience to people around the globe.">
+    <meta name="twitter:image" content="https://www.horizonsend.com/images/logo-black.png">
+
+    <title>Horizon's End | Video Game Design</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/new-style.css">
+    <link rel="shortcut icon" href="/images/favicon.png?v=2">
+    <link rel="logo" type="image/png" href="/images/logo-black.png">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,600">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "https://www.horizonsend.com",
+        "name": "Horizon's End",
+        "description": "Video Game Design",
+        "logo": "https://www.horizonsend.com/images/logo-black.png"
+      }
+    </script>
+  </head>
+  <body>
+    <header id="header">
+      <div>
+        <h1>
+          <a href="/" rel="home">
+            <img class="logo" src="/images/horizons-end_logo.png" alt="Horizon's End | Video Game Design">
+          </a>
+        </h1>
+        <nav id="navigation">
+          <a href="/" title="Home">
+            <span>Home</span>
+          </a>
+          <a href="/about" title="About">
+            <span>About</span>
+          </a>
+          <span class="dropdown" title="Games">
+            <span class="text">Games</span>
+            <div class="menu">
+              <div class="item">
+                <a href="/games/the-great-gaias.html">The Great Gaias</a>
+              </div>
+              <div class="item">
+                <a href="/games/gjallarhorn.html">Gjallarhorn</a>
+              </div>
+            </div>
+          </span>
+        </nav>
+      </div>
+    </header>
+    <main id="app">
+
+
+    </main>
+    <footer id="footer">
+      <img src="/images/horizons-end_logo-small.png" alt="Horizon's End">
+      <p>
+        <a href="https://www.facebook.com/horizonsendgaming" target="_blank" title="Horizon's End Facebook page">
+          <i class="fa fa-facebook-official"></i>
+          <span>Facebook</span>
+        </a>
+        &nbsp;|&nbsp;
+        <a href="https://www.instagram.com/horizonsendgaming/" target="_blank" title="Horizon's End on Instagram">
+          <i class="fa fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+        &nbsp;|&nbsp;
+        <a href="https://www.youtube.com/user/horizonsendgaming" target="_blank" title="Horizon's End YouTube channel">
+          <i class="fa fa-youtube"></i>
+          <span>YouTube</span>
+        </a>
+        &nbsp;|&nbsp;
+        <a href="https://thegreatgaias.gamepedia.com/The_Great_Gaias_Wiki" target="_blank" title="The Great Gaias Official Wiki hosted by Curse">
+          <i class="fa fa-pencil-square-o"></i>
+          <span>Wiki</span>
+        </a>
+        &nbsp;|&nbsp;
+        <a href="https://www.dropbox.com/sh/8zpffok4joky59p/AACLe425qbiZlwTgEw1BKRMaa?dl=0" target="_blank" title="Press Kit for The Great Gaias video game">
+          <i class="fa fa-download"></i>
+          <span>Press Kit</span>
+        </a>
+        &nbsp;|&nbsp;
+        <a href="mailto:horizonsendgaming@gmail.com" title="Send an email to Horizon's End">
+            <i class="fa fa-envelope-o"></i>
+            <span>Contact</span>
+          </a>
+      </p>
+      <small>&copy; 2018 Horizon's End, Inc. All Rights Reserved.</small>
+    </footer>
+    <script>
+    (function () {
+      const toggler = document.getElementsByClassName('toggle-fold')
+      Object.keys(toggler).forEach(key => 
+        toggler[key].addEventListener('click', function() {
+        let fold = this.parentNode.getElementsByClassName('fold')[0] 
+        fold.style.display === 'inline' 
+          ? fold.style.display = 'none' 
+          : fold.style.display = 'inline'
+        this.childNodes[0].nodeValue.indexOf('More') === -1 
+          ? this.childNodes[0].nodeValue = '\u2026More \u00bb' 
+          : this.childNodes[0].nodeValue = '\u00ab Less';
+        })
+      )
+      const items = document.getElementsByClassName('media-item')
+      Object.keys(items).forEach(key => items[key].addEventListener('click', function() {
+        this.classList.toggle("show-media-item")
+        this.getElementsByTagName("figcaption")[0].classList.toggle("show-caption")
+      }))
+    })()
+    </script>
+  </body>
 </html>

@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato','Arial', 'Helvetica', sans-serif;
+}
+html, body {
+  width: 100%;
+  overflow-x:hidden;
+}
+#header {
+  width: 100%;
+  background: none;
+  border-top: 1px solid red;
+  overflow: hidden;
+  position: absolute;
+  z-index: 3;
+}
+#header > div {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+#header > div h1 {
+  display: inline-block;
+  width: 300px;
+}
+.logo {
+  width: 300px;
+}
+a, a:link, a:visited, a:active {
+  color: red;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a[rel=home], a[rel=home]:link, a[rel=home]:visited, a[rel=home]:active {
+  color: white;
+  font-weight: lighter;
+  font-size: 18px; 
+}
+nav {
+  float: right;
+  margin-top: 45px;
+}
+nav a, nav a:link, nav a:visited, nav a:active {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: 30px;
+}
+nav a:hover {
+ text-decoration: underline; 
+}
+nav .dropdown .text {
+  color: white;
+  font-size: 18px;
+}
+nav .dropdown .text:hover {
+  text-decoration: underline; 
+}
+nav .dropdown .menu {
+  background-color: #f9f9f9;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  display: none;
+  height: 180px;
+  margin: 0;
+  width: 218px;
+  z-index: 3;
+}
+nav .dropdown:hover .menu,
+nav .dropdown:active .menu {
+  background-color: rgba(255,255,255,0.5);
+  display: block;
+}
+nav .dropdown .menu .item {
+  height: 60px;
+  width: 100%;
+}
+nav .dropdown .menu .item a {
+  border-bottom: 1px solid #ccc;
+  display: block;
+  font-size: 16px;
+  padding: 20px; 
+  text-transform: uppercase;
+  width: 100%;
+}
+nav .dropdown .menu .item a:hover {
+  color: gray;
+  background-color: rgba(255,255,255,0.5);
+  text-decoration: none;
+}
+
+#footer {
+  text-align: center;
+  width: 100%;
+  padding: 40px 0;
+  margin: 0 auto;
+  margin-top: 40px;
+  background: black;
+  color: white;
+}
+#footer > img {
+  width: 200px;
+  margin-bottom: 40px;
+}
+#footer a {
+  font-size: 14px;
+  color: #999;
+}
+#footer small {
+  display: block;
+  margin-top: 10px;
+}
+.sections {
+  display: flex;
+  flex-flow: row wrap;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+
+/*===========================================================*/
+
+.topsection {
+  background: black;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin-bottom: 40px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.topsection div img {
+  margin: 0 auto;
+  max-height: 100vh;
+  width: 100%;
+}
+.topsection div .cta {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  /* left: 40%; */
+  position: absolute;
+  text-align: center;
+  text-shadow: 1px 1px black;
+  top: 44%;
+  width: 100%;
+  z-index: 99;
+}
+.topsection div .cta div:first-child {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.topsection div .cta .play-button {
+  text-align: center;
+  width: 100%;
+}
+.topsection div .cta .play-button i {
+  cursor: pointer;
+  font-size: 100px;
+}
+.topsection div .cta .purchase-game {
+  margin-top: 200px;
+}
+.topsection div .cta .purchase-game p {
+  margin-bottom: 25px; 
+}
+.topsection div .cta .purchase-game a {
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.topsection div .cta .purchase-game a:hover {
+  text-decoration: none;
+}
+.overlay {
+  background-color: rgba(0,0,0,0.3);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  bottom: 0;
+  display: block;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+
+/**
+ * News
+ */
+.article {
+  width: 400px;
+  margin: 40px 40px 40px 0;
+  background: white;
+}
+.article:nth-of-type(3n) {
+  margin-right: 0;
+}
+.article figure {
+  cursor: pointer;
+  border: 1px solid gray;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background: black;
+}
+.article img {
+  width: 100%;
+}
+.article figcaption {
+  width: 100%;
+  color: #eee;
+  background: rgba(0,0,0,0.75); 
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.article h2 {
+  font-size: 24px;
+  font-weight: lighter;
+  margin: 20px 0 5px 0;
+}
+.article address, .article time {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.article p {
+  font-size: 16px;
+  line-height: 1.2;
+  width: 100%;
+}
+.fold {
+  display: none;
+}
+.show-fold {
+  display: block;
+}
+.toggle-fold {
+  display: inline;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.article a, 
+.article a:link, 
+.article a:visited, 
+.article a:active {
+  color: red;
+  text-decoration: none;
+}
+.article a:hover {
+  color: maroon;
+  text-decoration: underline;
+}
+
+
+/**
+ * Mobile
+ */
+
+@media only screen and (max-width:1200px) {
+  .sections {
+    width: 800px;
+  }
+
+  .article {
+    width: 380px;
+  }
+  .article:nth-of-type(3n) {
+    margin-right: 40px;
+  }
+  .article:nth-of-type(2n) {
+    margin-right: 0;
+  }
+  
+  
+  /*=================================================================================================
+  =================================================================================================*/
+    /*=================================================================================================
+  =================================================================================================*/
+  
+  .topsection {
+    height: 100%; 
+  }
+  .topsection div .cta {
+    top: 38%;
+  }
+  
+  .topsection div .cta .play-button i {
+    font-size: 75px;
+  }
+  .topsection div .cta .purchase-game {
+    margin-top: 100px;
+  }
+
+  
+}
+@media only screen and (max-width:800px) {
+  #header > div {
+    width: 100%;
+  }
+  .logo {
+    width: 200px;
+  }
+  .sections {
+    width: 100%;
+  }
+  #news > * {
+    width: 100%;
+  }
+  .article {
+    margin-right: 0;
+  }
+  .article:nth-of-type(3n) {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width:500px) {
+
+
+}
