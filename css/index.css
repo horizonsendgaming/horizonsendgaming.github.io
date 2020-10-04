@@ -344,6 +344,7 @@ nav .dropdown .menu .item a:hover {
 
   #header {
     background: black;
+    height: 100px;
     position: static;
   }
   #header > div {
