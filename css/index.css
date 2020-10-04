@@ -150,7 +150,6 @@ nav .dropdown .menu .item a:hover {
   color: white;
   font-size: 22px;
   font-weight: bold;
-  /* left: 40%; */
   position: absolute;
   text-align: center;
   text-shadow: 1px 1px black;
@@ -324,9 +323,21 @@ nav .dropdown .menu .item a:hover {
   .logo {
     width: 200px;
   }
+
   .sections {
     width: 100%;
   }
+
+  .topsection div .cta {
+    font-size: 12px;
+    top: 44%;
+  }
+  .topsection div .cta div:first-child {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+
   #news > * {
     width: 100%;
   }
