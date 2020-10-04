@@ -321,19 +321,15 @@ nav .dropdown .menu .item a:hover {
   .logo {
     width: 200px;
   }
-
   .sections {
     width: 100%;
   }
-
   .topsection div .cta {
-    font-size: 12px;
+    font-size: 14px;
   }
   .topsection div .cta div:first-child {
     font-size: 22px;
   }
-
-
   #news > * {
     width: 100%;
   }
@@ -346,5 +342,14 @@ nav .dropdown .menu .item a:hover {
 }
 @media only screen and (max-width:500px) {
 
+  #header {
+    background: black;
+  }
+  .topsection {
+    top: 100px;
+  }
+  .overlay {
+    display: none;
+  }
 
 }
