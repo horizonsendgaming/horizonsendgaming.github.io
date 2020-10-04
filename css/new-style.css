@@ -161,10 +161,9 @@ a.side-bar-btn {
   margin-right: 40px;
 }
 
-/**
- * Showcase
- */
-#showcase {
+
+
+.topsection {
   background: black;
   display: flex;
   height: 100vh;
@@ -174,11 +173,11 @@ a.side-bar-btn {
   position: relative;
   width: 100%;
 }
-#showcase img {
+.topsection div img {
   width: 100%;
   margin: 0 auto;
 }
-#showcase .cta {
+.topsection div .cta {
   color: white;
   font-size: 22px;
   font-weight: bold;
@@ -190,32 +189,32 @@ a.side-bar-btn {
   width: 100%;
   z-index: 99;
 }
-#showcase .cta div:first-child {
+.topsection div .cta div:first-child {
   font-size: 32px;
   margin-bottom: 20px;
 }
-#showcase .cta .play-button {
+.topsection div .cta .play-button {
   text-align: center;
   width: 100%;
 }
-#showcase .cta .play-button i {
+.topsection div .cta .play-button i {
   cursor: pointer;
   font-size: 100px;
 }
-#showcase .cta .purchase-game {
+.topsection div .cta .purchase-game {
   margin-top: 200px;
 }
-#showcase .cta .purchase-game p {
+.topsection div .cta .purchase-game p {
   margin-bottom: 25px; 
 }
-#showcase .cta .purchase-game a {
+.topsection div .cta .purchase-game a {
   color: white;
   background-color: rgba(0,0,0,0.5);
   border: 2px solid white;
   border-radius: 5px;
   padding: 10px 20px;
 }
-#showcase .cta .purchase-game a:hover {
+.topsection div .cta .purchase-game a:hover {
   text-decoration: none;
 }
 .overlay {
@@ -270,7 +269,33 @@ a.side-bar-btn {
 }
 
 
-
+/**
+ * Showcase
+ */
+ #showcase {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.trailer {
+  border: 1px solid #777;
+  margin-right: 40px;
+}
+.side-bar {
+  width: 400px;
+}
+.steam-widget {
+  display: block;
+  height: 192px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+}
+.bandcamp-widget {
+  display: block;
+  width: 100%;
+  height: 400px;
+  border: none;
+}
 
 /**
  * News
