@@ -174,11 +174,11 @@ a.side-bar-btn {
   position: relative;
   width: 100%;
 }
-#showcase div img {
+#showcase img {
   width: 100%;
   margin: 0 auto;
 }
-#showcase div .cta {
+#showcase .cta {
   color: white;
   font-size: 22px;
   font-weight: bold;
@@ -190,32 +190,32 @@ a.side-bar-btn {
   width: 100%;
   z-index: 99;
 }
-#showcase div .cta div:first-child {
+#showcase .cta div:first-child {
   font-size: 32px;
   margin-bottom: 20px;
 }
-#showcase div .cta .play-button {
+#showcase .cta .play-button {
   text-align: center;
   width: 100%;
 }
-#showcase div .cta .play-button i {
+#showcase .cta .play-button i {
   cursor: pointer;
   font-size: 100px;
 }
-#showcase div .cta .purchase-game {
+#showcase .cta .purchase-game {
   margin-top: 200px;
 }
-#showcase div .cta .purchase-game p {
+#showcase .cta .purchase-game p {
   margin-bottom: 25px; 
 }
-#showcase div .cta .purchase-game a {
+#showcase .cta .purchase-game a {
   color: white;
   background-color: rgba(0,0,0,0.5);
   border: 2px solid white;
   border-radius: 5px;
   padding: 10px 20px;
 }
-#showcase div .cta .purchase-game a:hover {
+#showcase .cta .purchase-game a:hover {
   text-decoration: none;
 }
 .overlay {
