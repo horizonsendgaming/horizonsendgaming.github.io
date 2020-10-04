@@ -484,7 +484,10 @@ a.side-bar-btn {
   height: 100px;
 }
 @media only screen and (max-width:1200px) {
-
+  .logo {
+    width: 200px;
+    margin-left: 5px;
+  }
   .sections {
     width: 800px;
   }
@@ -574,13 +577,7 @@ a.side-bar-btn {
     width: 200px;
     margin-left: 5px;
   }
-  nav {
-    margin-top: 28px;
-  }
-  nav a, nav a:link, nav a:visited, nav a:active {
-    font-size: 34px;
-    margin-right: 50px;
-  }
+
   .sections {
     width: 100%;
   }
