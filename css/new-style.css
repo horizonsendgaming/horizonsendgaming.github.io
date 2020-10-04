@@ -484,15 +484,7 @@ a.side-bar-btn {
   height: 100px;
 }
 @media only screen and (max-width:1200px) {
-  #header > div {
-    width: 800px;
-  }
-  nav a, nav a:link, nav a:visited, nav a:active {
-    margin-right: 100px;
-  }
-  nav a:last-child {
-    margin-right: 0;
-  }
+
   .sections {
     width: 800px;
   }
