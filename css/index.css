@@ -71,10 +71,10 @@ nav .dropdown .menu {
   border-radius: 0 0 5px 5px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   display: none;
-  height: 280px;
+  height: 100%;
   margin: 0;
   position: absolute;
-  right: 10px;
+  right: 0;
   width: 218px;
   z-index: 3;
 }
