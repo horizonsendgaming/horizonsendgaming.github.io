@@ -58,8 +58,6 @@ nav a:hover {
 }
 nav .dropdown {
   position: relative;
-
-  border: 1px dashed red;
 }
 nav .dropdown .text {
   color: white;
@@ -79,8 +77,6 @@ nav .dropdown .menu {
   right: 0;
   width: 218px;
   z-index: 3;
-
-  border: 1px dashed red;
 }
 nav .dropdown:hover .menu,
 nav .dropdown:active .menu {
@@ -101,7 +97,7 @@ nav .dropdown .menu .item a {
   text-transform: uppercase;
   width: 100%;
 
-  border: 1px dashed red;
+  height: 100px;
 }
 nav .dropdown .menu .item a:hover {
   color: gray;
