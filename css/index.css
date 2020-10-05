@@ -558,6 +558,7 @@ nav .dropdown .menu .item a:hover {
     display: block;
     float: right;
     margin: 35px 20px 0 0;
+    z-index: 9999;
   }
   .overlay {
     display: none;
