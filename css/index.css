@@ -70,7 +70,7 @@ nav .dropdown .text:hover {
 }
 nav .dropdown .menu {
   background-color: #f9f9f9;
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 5px 5px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   display: none;
   height: 200px;
@@ -90,7 +90,7 @@ nav .dropdown .menu .item {
   width: 100%;
 }
 nav .dropdown .menu .item a {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
   color: black;
   display: block;
   font-size: 16px;
@@ -99,7 +99,7 @@ nav .dropdown .menu .item a {
   width: 100%;
 }
 nav .dropdown .menu .item a:hover {
-  background-color: #ccc;
+  background-color: #eee;
   text-decoration: none;
 }
 
