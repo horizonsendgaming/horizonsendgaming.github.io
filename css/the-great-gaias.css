@@ -266,6 +266,7 @@ nav .dropdown .menu .item a:hover {
   width: 620px;
 }
 
+
 #external-media div a,
 #external-media div a img {
   width: 100%; 
@@ -395,7 +396,12 @@ nav .dropdown .menu .item a:hover {
   #external-media div:first-child {
     margin-bottom: 40px;
   }
+
+  #external-media div:last-child {
+    width: 100%;
+  }
   .bandcamp-widget {
+    display: block;
     margin: 0 auto; 
   }
 
