@@ -587,7 +587,7 @@ nav .dropdown .menu .item a:hover {
   #header > div {
     padding: 0 20px;
   }
-  nav {
+  #navigation {
     display: none;
   }
   .mobile-menu-button {
