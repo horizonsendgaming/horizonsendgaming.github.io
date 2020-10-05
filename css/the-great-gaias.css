@@ -28,6 +28,9 @@ html, body {
 .logo {
   width: 300px;
 }
+.mobile-menu {
+  display: none;
+}
 a, a:link, a:visited, a:active {
   color: red;
   text-decoration: none;
@@ -437,9 +440,31 @@ nav .dropdown .menu .item a:hover {
   }
 }
 @media only screen and (max-width:500px) {
+  #header {
+    background: black;
+    height: 100px;
+    position: static;
+  }
+  #header > div {
+    padding: 0 20px;
+  }
 
-  #reviews {
+  .nav {
+    display: none;
+  }
+
+  .mobile-menu {
+    color: white;
     display: block;
+    float: right;
+    margin: 35px 20px 0 0;
+  }
+
+  .overlay {
+    display: none;
+  }
+  #reviews {
+    display: none;
     margin: 40px 0;
     width: 100%;
   }
