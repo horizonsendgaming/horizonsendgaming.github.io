@@ -28,7 +28,7 @@ html, body {
 .logo {
   width: 300px;
 }
-.mobile-menu {
+.mobile-menu-button {
   display: none;
 }
 a, a:link, a:visited, a:active {
@@ -553,7 +553,7 @@ nav .dropdown .menu .item a:hover {
   .nav {
     display: none;
   }
-  .mobile-menu {
+  .mobile-menu-button {
     color: white;
     display: block;
     float: right;
