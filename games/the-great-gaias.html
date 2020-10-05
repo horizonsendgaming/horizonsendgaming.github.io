@@ -269,6 +269,11 @@
         player = new YT.Player('trailer')
       }
       const openModal = () => {
+        if (window.innerWidth <= 500) {
+          const element = document.getElemebtById('trailer')
+          element.setAttribute('width', 400)
+          element.setAttribute('height', 200)
+        }
         document.getElementById('myModal').style.display = 'block'
         player.playVideo()
       }
@@ -283,15 +288,6 @@
       const closeNav = () => {
         document.getElementById('mobile-menu').style.height = '0%'
       }
-
-      (function () {
-        if (window.innerWidth <= 500) {
-          const element = document.getElemebtById('trailer')
-          element.setAttribute('width', 400)
-          element.setAttribute('height', 200)
-        }
-      })()
-
 
       (function () {
         const items = document.getElementsByClassName('media-item')
