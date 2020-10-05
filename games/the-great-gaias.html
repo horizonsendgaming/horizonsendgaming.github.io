@@ -80,7 +80,7 @@
             <div id="myModal" class="modal">
               <span class="close cursor" onclick="closeModal()">&times;</span>
               <div class="modal-content">
-                <iframe id="trailer" src="https://www.youtube.com/embed/K0JwHzIXu68" 
+                <iframe id="trailer" src="https://www.youtube.com/embed/K0JwHzIXu68?enablejsapi=1" 
                   width="1280" 
                   height="720"
                   frameborder="0" 
@@ -252,13 +252,20 @@
       </p>
       <small>&copy; 2018 Horizon's End, Inc. All Rights Reserved.</small>
     </footer>
+    <script src="/js/youtubeApi.js"></script>
     <script>
+      var player = undefined
+
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('trailer')
+      }
+
       const openModal = () => {
         document.getElementById('myModal').style.display = 'block'
-        //player.playVideo()
+        player.playVideo()
       }
       const closeModal = () => {
-        //player.stopVideo()
+        player.stopVideo()
         document.getElementById('myModal').style.display = 'none'
       }
       (function () {
