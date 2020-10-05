@@ -272,7 +272,9 @@
       const openModal = () => {
         if (window.innerWidth <= 500) {
           const element = document.getElementById('trailer')
-          element.setAttribute('width', 400)
+          element.removeAttribute('height')
+          elemebt.removeAttribute('width')
+          element.style.width = '100%'
           element.style.position = 'absolute'
           element.style.left = '-20px'
           element.style.margin = '0'
