@@ -47,9 +47,19 @@
             <img class="logo" src="/images/horizons-end_logo.png" alt="Horizon's End | Video Game Design">
           </a>
         </h1>
-        <div class="mobile-menu">
+
+        <div class="mobile-menu-button" onclick="openNav()">
           <i class="fa fa-bars fa-2x"></i>
         </div>
+        <div id="mobile-menu">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="/">Home</a>
+            <a href="/games/the-great-gaias.html">The Great Gaias</a>
+            <a href="/games/gjallarhorn.html">Gjallarhorn</a>
+          </div>
+        </div>
+
         <nav id="navigation">
           <a href="/" title="Home">
             <span>Home</span>
@@ -255,11 +265,9 @@
     <script src="/js/youtubeApi.js"></script>
     <script>
       var player = undefined
-
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('trailer')
       }
-
       const openModal = () => {
         document.getElementById('myModal').style.display = 'block'
         player.playVideo()
@@ -268,6 +276,14 @@
         player.stopVideo()
         document.getElementById('myModal').style.display = 'none'
       }
+
+      const openNav = () => {
+        document.getElementById('mobile-menu').style.height = '100%'
+      }
+      const closeNav = () => {
+        document.getElementById('mobile-menu').style.height = '0%'
+      }
+
       (function () {
         const items = document.getElementsByClassName('media-item')
         Object.keys(items).forEach(key => items[key].addEventListener('click', function() {
