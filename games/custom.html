@@ -45,8 +45,8 @@
   /* The Overlay (background) */
 #mobile-menu {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-  height: 100%;
-  width: 0;
+  height: 0;
+  width: 100%;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
@@ -110,16 +110,14 @@
             <img class="logo" src="/images/horizons-end_logo.png" alt="Horizon's End | Video Game Design">
           </a>
         </h1>
+
         <div class="mobile-menu-button" onclick="openNav()">
           <i class="fa fa-bars fa-2x"></i>
         </div>
-
-        <!-- Mobile Menu Overlay -->
         <div id="mobile-menu">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <div class="overlay-content">
             <a href="/">Home</a>
-            <span>Games</span>
             <a href="/games/the-great-gaias.html">The Great Gaias</a>
             <a href="/games/gjallarhorn.html">Gjallarhorn</a>
           </div>
