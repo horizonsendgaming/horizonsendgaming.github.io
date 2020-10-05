@@ -401,7 +401,7 @@ nav .dropdown .menu .item a:hover {
     width: 100%;
   }
   .bandcamp-widget {
-    display: block;
+    width: 100%;
     margin: 0 auto; 
   }
 
