@@ -605,7 +605,7 @@ nav .dropdown .menu .item a:hover {
   }
 }
 
-/*
+/* Required for mobile menu */
 @media screen and (max-height: 450px) {
   #mobile-menu a {font-size: 20px}
   #mobile-menu .closebtn {
@@ -614,4 +614,3 @@ nav .dropdown .menu .item a:hover {
     right: 35px;
   }
 }
-*/
