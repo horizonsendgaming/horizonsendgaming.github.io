@@ -43,7 +43,7 @@
 
 <style>
   /* The Overlay (background) */
-.mobile-menu {
+#mobile-menu {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */   
   height: 100%;
   width: 0;
@@ -67,7 +67,7 @@
 }
 
 /* The navigation links inside the overlay */
-.mobile-menu a {
+#mobile-menu a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
@@ -77,12 +77,12 @@
 }
 
 /* When you mouse over the navigation links, change their color */
-.mobile-menu a:hover, .overlay a:focus {
+#mobile-menu a:hover, .overlay a:focus {
   color: #f1f1f1;
 }
 
 /* Position the close button (top right corner) */
-.mobile-menu .closebtn {
+#mobile-menu .closebtn {
   position: absolute;
   top: 20px;
   right: 45px;
@@ -91,8 +91,8 @@
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-  .mobile-menu a {font-size: 20px}
-  .mobile-menu .closebtn {
+  #mobile-menu a {font-size: 20px}
+  #mobile-menu .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
@@ -115,7 +115,7 @@
         </div>
 
         <!-- Mobile Menu Overlay -->
-        <div id="mobile-navigation" class="mobile-menu">
+        <div id="mobile-menu">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <div class="overlay-content">
             <a href="/">Home</a>
@@ -345,10 +345,10 @@
     </footer>
     <script>
       const openNav = () => {
-        document.getElementById('mobile-navigation').style.height = '100%'
+        document.getElementById('mobile-menu').style.height = '100%'
       }
       const closeNav = () => {
-        document.getElementById('mobile-navigation').style.height = '0%'
+        document.getElementById('mobile-menu').style.height = '0%'
       }
 
       (function () {
