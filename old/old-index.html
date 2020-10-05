@@ -23,7 +23,7 @@
 
     <title>Horizon's End | Video Game Design</title>
 
-    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="shortcut icon" href="/images/favicon.png?v=2">
     <link rel="logo" type="image/png" href="/images/logo-black.png">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,600">
@@ -47,50 +47,51 @@
             <img class="logo" src="/images/horizons-end_logo.png" alt="Horizon's End | Video Game Design">
           </a>
         </h1>
-
-        <div class="mobile-menu-button" onclick="openNav()">
-          <i class="fa fa-bars fa-2x"></i>
-        </div>
-        <div id="mobile-menu">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div class="mobile-menu-content">
-            <a href="/">Home</a>
-            <a href="/games/the-great-gaias.html">The Great Gaias</a>
-            <a href="/games/gjallarhorn.html">Gjallarhorn</a>
-          </div>
-        </div>
-
         <nav id="navigation">
-          <a href="/" title="Home">
-            <span>Home</span>
+          <a href="http://store.steampowered.com/app/818610/The_Great_Gaias/" title="Buy The Great Gaias on Steam!" target="_blank">
+            <i class="fa fa-steam-square"></i>
           </a>
-          <div class="dropdown">
-            <span class="text">Games</span>
-            <div class="menu">
-              <div class="item">
-                <a href="/games/the-great-gaias.html">The Great Gaias</a>
-              </div>
-              <div class="item">
-                <a href="/games/gjallarhorn.html">Gjallarhorn</a>
-              </div>
-            </div>
-          </div>
+          <a href="https://horizonsend.bandcamp.com/album/the-great-gaias-original-soundtrack" title="Buy The Great Gaias Musical Score on Bandcamp!" target="_blank">
+            <i class="fa fa-bandcamp"></i>
+          </a>
         </nav>
       </div>
     </header>
     <main id="app">
-      <section class="topsection">
-        <div>
-          <img src="/images/gjallarhorn-logo.png" srcset="/images/gjallarhorn-logo.png 1x, /images/gjallarhorn-mobile-background.png 500w" alt="Gjallarhorn">
-          <div class="overlay"></div>
-          <div class="cta">
-            <div>Available soon on Steam</div>
-            <div>Early access begins 2021</div>
-          </div>
+      <!--
+      <section id="hero" class="sections">
+        <iframe class="kickstarter" src="https://www.kickstarter.com/projects/1940485896/gjallarhorn/widget/video.html" 
+          width="840" 
+          height="450" 
+          frameborder="0" 
+          scrolling="no">
+        </iframe>
+        <div class="side-bar">
+          <img src="images/gjallarhorn-logo.png" alt="Gjallarhorn Logo">
+          <a class="side-bar-btn" href="https://www.kickstarter.com/projects/1940485896/gjallarhorn" target="_blank" title="Gjallarhorn Kickstarter Project">
+            <img src="images/kickstarter-logo.png" alt="Kickstart Gjallarhorn">
+            <p>The next chapter set in the massive world of The Great Gaias explores the Osirian Empire and their search for a new High Chieftain.</p>
+          </a>
         </div>
       </section>
-  
+      -->
+      <section id="showcase" class="sections">
+        <iframe class="trailer" src="https://www.youtube.com/embed/K0JwHzIXu68" 
+          width="840" 
+          height="500" 
+          frameborder="0" 
+          allow="autoplay; encrypted-media" 
+          allowfullscreen>
+        </iframe>
+        <div class="side-bar">
+          <iframe class="steam-widget" src="https://store.steampowered.com/widget/818610/"></iframe>
+          <iframe class="bandcamp-widget" src="https://bandcamp.com/EmbeddedPlayer/album=3182079143/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless>
+            <a href="http://horizonsend.bandcamp.com/album/the-great-gaias-original-soundtrack">The Great Gaias - Original Soundtrack by Bryan Davis &amp; Aaron Krogh</a>
+          </iframe>
+        </div>
+      </section>
       <section id="news" class="sections">
+        
         <article class="article">
           <figure>
             <a href="/images/gjallarhorn-pub.jpg">
@@ -104,7 +105,8 @@
             <time datetime="2020-10-03">Oct 03, 2020</time>
           </header>
           <div>
-            <p>Much progress has been made over the past year on the development of Gjallarhorn! What's left now is to implement further aspects of the story and continued work on map design. All major systems are basically complete. Including weapon skill growth for each of the 15 weapon types; each weapon has its own skill tree with traits that can be unlocked at certain thresholds. Fame and Karma system which span the whole empire, plus individual town reputations for each of the 5 towns. As a result, NPCs and shops will react differently <span class="fold">based on these variables. The bounty board system, which lets the player work as a bounty hunter with many choice and consequence decisions. A day and night cycle with NPC schedules making the game world feel more realistic and alive. Thief quests which allow you to break into homes and shops at night if your thieving skills are high enough. Work on Gjallarhorn is progressing rapidly and on schedule for expected release next year. In the meantime if you haven't already done so, check out our current title, <a href="https://store.steampowered.com/app/818610/The_Great_Gaias/" target="_blank" title="The Great Gaias on Steam">The Great Gaias</a> available on Steam.</span> <a class="toggle-fold">&hellip;More &raquo;</a></p>
+            <p>
+              Much progress has been made over the past year on the development of Gjallarhorn! What's left now is to implement further aspects of the story and continued work on map design. All major systems are basically complete. Including weapon skill growth for each of the 15 weapon types; each weapon has its own skill tree with traits that can be unlocked at certain thresholds. Fame and Karma system which span the whole empire, plus individual town reputations for each of the 5 towns. As a result, NPCs and shops will react differently <span class="fold">based on these variables. The bounty board system, which lets the player work as a bounty hunter with many choice and consequence decisions. A day and night cycle with NPC schedules making the game world feel more realistic and alive. Thief quests which allow you to break into homes and shops at night if your thieving skills are high enough. Work on Gjallarhorn is progressing rapidly and on schedule for expected release next year. In the meantime if you haven't already done so, check out our current title, <a href="https://store.steampowered.com/app/818610/The_Great_Gaias/" target="_blank" title="The Great Gaias on Steam">The Great Gaias</a> available on Steam.</span> <a class="toggle-fold">&hellip;More &raquo;</a></p>
           </div>
         </article>
         
@@ -191,6 +193,7 @@
 
     
     <!--
+
         <article class="article">
           <figure>
             <a href="/images/horizons-end_the-great-gaias_new-battle-sprites.jpg">
@@ -242,6 +245,92 @@
         </article>
         -->
       </section>
+      <section id="media" class="sections">
+        <figure id="atrius" class="media-item">
+          <img src="/images/horizons-end_the-great-gaias_character-atrius.jpg" alt="Concept art of the character Atrius Althorand from The Great Gaias">
+          <figcaption class="media-caption">
+            <h3>Atrius Althorand</h3>
+            <p>Atrius is the last blood of the respected and affluent House Althorand. The course of his life changed dramatically during his childhood when his parents were killed by a destitute vagrant at the end of his rope. Since then Atrius has taken care of his younger sister Elaenia. Atrius trained himself and eventually became a master of the art of thievery and assassination. Ultimately he founded the Orgard Thieves Guild where he became Pots' employer and closest confidant.</p>
+          </figcaption>
+        </figure>
+        <figure id="agramed" class="media-item">
+          <img src="/images/horizons-end_the-great-gaias_character-agramed.jpg" alt="Concept art of the character Agramed from The Great Gaias">
+          <figcaption class="media-caption">
+            <h3>Agramed</h3>
+            <p>Agramed Oslo was one of the greatest General's that the Osirian Empire had ever seen. He was condemned as a traitor after being framed for the attempted murder of Chieftain Moreth, he became the Osirian Gladiator Champion for four years.</p>
+          </figcaption>
+        </figure>
+        <figure id="furi" class="media-item">
+          <img src="/images/horizons-end_the-great-gaias_character-furi.jpg" alt="Concept art of the character Furi Stormcrow from The Great Gaias">
+          <figcaption class="media-caption">
+            <h3>Furi Stormcrow</h3>
+            <p>Furi Stormcrow is the Keeper of Magic's daughter. It is said that she is a natural when dealing with magic. She is the same age as Pots, who's father is also on the council, so they were familar while growing up. Furi has a reputation for being ostentatious and cocksure. She is proud and feels her time shouldn't be wasted on those without magical talent.</p>
+          </figcaption>
+        </figure>
+        <figure id="griswold" class="media-item">
+          <img src="/images/horizons-end_the-great-gaias_character-griswold.jpg" alt="Concept art of the character Griswold Stormprey from The Great Gaias">
+          <figcaption class="media-caption">
+            <h3>Griswold Stormprey</h3>
+            <p>Griswold Stormprey has been a practitioner of the arts of healing magic for over fifty years, and has achieved such titles as Master of the Adept and Keeper of Storms. He is one of the highest ranks within the Circle of Twelve, the High Order of Magi. Upon receiving a premonition, Griswold came to Orgard to save the Children of Light. Griswold believes he is the reborn soul of Arman Gill, Cleric of Tantalasia.</p>
+          </figcaption>
+        </figure>
+        <figure id="virgil" class="media-item">
+          <img src="/images/horizons-end_the-great-gaias_character-virgil.jpg" alt="Concept art of the character Virgil Dal'Laman Mythos from The Great Gaias">
+          <figcaption class="media-caption">
+            <h3>Virgil Dal'Laman Mythos</h3>
+            <p>Virgil Dal'Laman Mythos was born in a small village south of the Solisteri Forest. Never being considered strong or very handsome, he began his quiet study of magic. Over the years Virgil became quite adept at sorcery, to the horror of his village. After a great tragedy, Virgil began his quest to learn great magic.</p>
+          </figcaption>
+        </figure>
+        <figure id="elric" class="media-item">
+          <img src="/images/horizons-end_the-great-gaias_character-elric.jpg" alt="Concept art of the character Elric Yore from The Great Gaias">
+          <figcaption class="media-caption">
+            <h3>Elric Yore</h3>
+            <p>Elric Yore hails from Sovereign, the city of knights. His father was the Keeper of the Sword before he succumbed to fever. Elric has since left from his long held place as a Knight of Sovereign to follow his own path. He is most skillful in the tracking and hunting of beasts in the wild, and having giving up his title and land after his Father's death, he has taken on the role of Ranger.</p>
+          </figcaption>
+        </figure>
+        <figure id="eldromus" class="media-item">
+          <img src="/images/horizons-end_the-great-gaias_character-eldromus.jpg" alt="Concept art of the character Eldromus Blackheart from The Great Gaias">
+          <figcaption class="media-caption">
+            <h3>Eldromus Blackheart</h3>
+            <p>Born Eldromus Cortlabar of the land of Validus. Eldromus grew up with Arthur Greyhem, and they both became Generals in the Validian Empire. The two became renowned for their displays of loyalty and honor toward the Empire, and each other. However, when Arman Gill finally convinced Arthur Greyhem to rebel against Validus, Eldromus turned against Arthur and the Silver Army, earning himself the heinous sobriquet The Betrayer. The Elven Lorac Cael Vaeili cursed Eldromus causing him to walk the land forever until 'justice is done'.</p>
+          </figcaption>
+        </figure>
+        <figure id="bruger" class="media-item">
+          <img src="/images/horizons-end_the-great-gaias_character-bruger.jpg" alt="Concept art of the character Bruger Ironhelm from The Great Gaias">
+          <figcaption class="media-caption">
+            <h3>Bruger Ironhelm</h3>
+            <p>Bruger Ironhelm is a young Dwarf from the Plains of Zaardun, home to the barbarian hoards. Though it's known that all Dwarves hail from the Grand Halls of Frosthammer, the untimely death of his father left Bruger alone. The mighty barbarian tribe Kuruk discovered Bruger one day and took the dwarf in as one of their own.</p>
+          </figcaption>
+        </figure>
+        <figure id="kaelas" class="media-item">
+          <img src="/images/horizons-end_the-great-gaias_character-kaelas.jpg" alt="Concept art of the character Kaelas Tangralas from The Great Gaias">
+          <figcaption class="media-caption">
+            <h3>Kaelas Tangralas</h3>
+            <p>Kaelas Tangralas is Elf-kin from the woodland realms of the Drakkenwood. His study of nature magic has provided him extroadinary abilities which allow him to transform into certain animals at will, and call upon nature's elements to vanquish his foes. In Drakkenwood he is considered a Druid of the highest regard.</p>
+          </figcaption>
+        </figure>
+        <figure id="pots" class="media-item">
+          <img src="/images/horizons-end_the-great-gaias_character-pots.jpg" alt="Concept art of the character Pots Talos from The Great Gaias">
+          <figcaption class="media-caption">
+            <h3>Pots Talos</h3>
+            <p>Pots Talos is the son of the Keeper of Truth, second highest esteem next to the Keeper of Magic. Pots possesses no magical talent. A shame to his Father, he instead turned to the ways of the Rogue, and makes his living working for the Orgard Thieves guild.</p>
+          </figcaption>
+        </figure>
+        <figure id="laeni" class="media-item">
+          <img src="/images/horizons-end_the-great-gaias_character-laeni.jpg" alt="Concept art of the character Elaenia Althorand from The Great Gaias">
+          <figcaption class="media-caption">
+            <h3>Elaenia Althorand</h3>
+            <p>Elaenia of the House Althorand, or Laeni as she likes to be called, was orphaned when she was a young girl; her parents both being the victims of a poverty related crime. Raised by her brother Atrius, Laeni became a gifted healer and a charming pub girl in Orgard. She has feelings for Pots, but she is reluctant to act on them as he is her brother's best friend.</p>
+          </figcaption>
+        </figure>
+        <figure id="wein" class="media-item">
+          <img src="/images/horizons-end_the-great-gaias_character-wein.jpg" alt="Concept art of the character Wein Beranedyn from The Great Gaias">
+          <figcaption class="media-caption">
+            <h3>Lord Wein Beranedyn</h3>
+            <p>Lord Wein Beranedyn was the Knight's Captain of Sovereign United and Champion of the Lance. Based on a premonition that came to him in the form of a dream Wein Beranedyn resigned his commission and travelled south to meet the Children of Light. It is said that Wein is the reborn soul of Arthur Greyhem, the King of Kings.</p>
+          </figcaption>
+        </figure>
+      </section>
     </main>
     <footer id="footer">
       <img src="/images/horizons-end_logo-small.png" alt="Horizon's End">
@@ -251,9 +340,9 @@
           <span>Facebook</span>
         </a>
         &nbsp;|&nbsp;
-        <a href="https://www.instagram.com/horizonsendgaming/" target="_blank" title="Horizon's End on Instagram">
-          <i class="fa fa-instagram"></i>
-          <span>Instagram</span>
+        <a href="https://www.twitch.tv/horizonsendgaming" target="_blank" title="Horizon's End on Twitch">
+          <i class="fa fa-twitch"></i>
+          <span>Twitch</span>
         </a>
         &nbsp;|&nbsp;
         <a href="https://www.youtube.com/user/horizonsendgaming" target="_blank" title="Horizon's End YouTube channel">
@@ -266,6 +355,11 @@
           <span>Wiki</span>
         </a>
         &nbsp;|&nbsp;
+        <a href="https://www.dropbox.com/sh/8zpffok4joky59p/AACLe425qbiZlwTgEw1BKRMaa?dl=0" target="_blank" title="Press Kit for The Great Gaias video game">
+          <i class="fa fa-download"></i>
+          <span>Press Kit</span>
+        </a>
+        &nbsp;|&nbsp;
         <a href="mailto:horizonsendgaming@gmail.com" title="Send an email to Horizon's End">
             <i class="fa fa-envelope-o"></i>
             <span>Contact</span>
@@ -274,32 +368,25 @@
       <small>&copy; 2018 Horizon's End, Inc. All Rights Reserved.</small>
     </footer>
     <script>
-      const openNav = () => {
-        document.getElementById('mobile-menu').style.height = '100%'
-      }
-      const closeNav = () => {
-        document.getElementById('mobile-menu').style.height = '0%'
-      }
-
-      (function () {
-        const toggler = document.getElementsByClassName('toggle-fold')
-        Object.keys(toggler).forEach(key => 
-          toggler[key].addEventListener('click', function() {
-          let fold = this.parentNode.getElementsByClassName('fold')[0] 
-          fold.style.display === 'inline' 
-            ? fold.style.display = 'none' 
-            : fold.style.display = 'inline'
-          this.childNodes[0].nodeValue.indexOf('More') === -1 
-            ? this.childNodes[0].nodeValue = '\u2026More \u00bb' 
-            : this.childNodes[0].nodeValue = '\u00ab Less';
-          })
-        )
-        const items = document.getElementsByClassName('media-item')
-        Object.keys(items).forEach(key => items[key].addEventListener('click', function() {
-          this.classList.toggle("show-media-item")
-          this.getElementsByTagName("figcaption")[0].classList.toggle("show-caption")
-        }))
-      })()
+    (function () {
+      const toggler = document.getElementsByClassName('toggle-fold')
+      Object.keys(toggler).forEach(key => 
+        toggler[key].addEventListener('click', function() {
+        let fold = this.parentNode.getElementsByClassName('fold')[0] 
+        fold.style.display === 'inline' 
+          ? fold.style.display = 'none' 
+          : fold.style.display = 'inline'
+        this.childNodes[0].nodeValue.indexOf('More') === -1 
+          ? this.childNodes[0].nodeValue = '\u2026More \u00bb' 
+          : this.childNodes[0].nodeValue = '\u00ab Less';
+        })
+      )
+      const items = document.getElementsByClassName('media-item')
+      Object.keys(items).forEach(key => items[key].addEventListener('click', function() {
+        this.classList.toggle("show-media-item")
+        this.getElementsByTagName("figcaption")[0].classList.toggle("show-caption")
+      }))
+    })()
     </script>
   </body>
 </html>
