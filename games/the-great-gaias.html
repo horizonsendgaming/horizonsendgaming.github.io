@@ -285,7 +285,11 @@
       }
 
       (function () {
-        console.log('window width:', window.innerWidth)
+        if (window.innerWidth <= 500) {
+          const element = document.getElemebtById('trailer')
+          element.setAttribute('width', 400)
+          element.setAttribute('height', 200)
+        }
       })()
 
 
