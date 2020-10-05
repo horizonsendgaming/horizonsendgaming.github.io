@@ -285,6 +285,11 @@
       }
 
       (function () {
+        console.log('window width:', window.innerWidth)
+      })()
+
+
+      (function () {
         const items = document.getElementsByClassName('media-item')
         Object.keys(items).forEach(key => items[key].addEventListener('click', function() {
           this.classList.toggle('show-media-item')
