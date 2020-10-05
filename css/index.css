@@ -28,9 +28,6 @@ html, body {
 .logo {
   width: 300px;
 }
-.mobile-menu-button {
-  display: none;
-}
 a, a:link, a:visited, a:active {
   color: red;
   text-decoration: none;
@@ -103,7 +100,9 @@ nav .dropdown .menu .item a:hover {
   text-decoration: none;
 }
 
-
+.mobile-menu-button {
+  display: none;
+}
 /* The Overlay (background) */
 #mobile-menu {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */   
@@ -139,7 +138,7 @@ nav .dropdown .menu .item a:hover {
 }
 
 /* When you mouse over the navigation links, change their color */
-#mobile-menu a:hover, .overlay a:focus {
+#mobile-menu a:hover, .overlay-content a:focus {
   color: #f1f1f1;
 }
 
