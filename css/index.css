@@ -115,7 +115,7 @@ nav .dropdown .menu .item a:hover {
   overflow-x: hidden; 
   transition: 0.5s;
 }
-.overlay-content {
+.mobile-menu-content {
   position: relative;
   top: 25%;
   width: 100%;
@@ -130,7 +130,7 @@ nav .dropdown .menu .item a:hover {
   display: block;
   transition: 0.3s;
 }
-#mobile-menu a:hover, .overlay-content a:focus {
+#mobile-menu a:hover, #mobile-menu a:focus {
   color: #f1f1f1;
 }
 #mobile-menu .closebtn {
