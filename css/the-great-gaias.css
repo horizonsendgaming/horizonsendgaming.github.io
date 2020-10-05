@@ -145,7 +145,6 @@ nav .dropdown .menu .item a:hover {
   color: white;
   font-size: 22px;
   font-weight: bold;
-  /* left: 40%; */
   position: absolute;
   text-align: center;
   text-shadow: 1px 1px black;
@@ -368,20 +367,12 @@ nav .dropdown .menu .item a:hover {
   .sections {
     width: 800px;
   }
-  
-  
-  /*=================================================================================================
-  =================================================================================================*/
-    /*=================================================================================================
-  =================================================================================================*/
-  
   .topsection {
     height: 100%; 
   }
   .topsection div .cta {
     top: 38%;
   }
-  
   .topsection div .cta .play-button i {
     font-size: 75px;
   }
@@ -407,8 +398,6 @@ nav .dropdown .menu .item a:hover {
     width: 100%;
     margin: 0 auto; 
   }
-
-  
   .media-item {
     width: 380px;
   }

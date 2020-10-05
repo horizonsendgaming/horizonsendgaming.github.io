@@ -279,6 +279,173 @@ nav .dropdown .menu .item a:hover {
 }
 
 
+
+/**
+ * Modal
+ **/
+ .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/**
+ * Reviews
+ */
+#reviews {
+  display: flex;
+  flex-flow: row no-wrap;
+  height: 420px;
+  justify-content: space-between;
+  margin: 40px auto 40px auto;
+  padding: 40px 0 0 0;
+  overflow: hidden;
+  width: 1280px;
+}
+
+#reviews div {
+  height: 100%;
+  width: 400px;
+}
+
+#reviews div img {
+  width: 100%;
+}
+
+/**
+ * External Media
+ */
+#external-media {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  width: 100%; 
+}
+#external-media div {
+  width: 620px;
+}
+
+
+#external-media div a,
+#external-media div a img {
+  width: 100%; 
+}
+.steam-widget {
+  display: block;
+  height: 192px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+}
+.bandcamp-widget {
+  display: block;
+  width: 100%;
+  height: 288px;
+  border: none;
+}
+
+
+/**
+ * Media
+ */
+#media {
+  margin-top: 40px; 
+}
+#media h3 {
+  font-size: 22px;
+  font-weight: lighter;
+  margin-bottom: 5px;
+}
+#media img {
+  width: 100%;
+}
+.media-item {
+  border: 1px solid gray;
+  overflow: hidden;
+  margin: 0 40px 40px 0;
+  position: relative;
+  height: 200px;
+  width: 400px;
+  cursor: pointer;
+}
+.media-item:nth-of-type(3n) {
+  margin-right: 0;
+}
+.show-media-item {
+  border: 1px solid gray;
+  overflow: auto;
+  margin-bottom: 40px;
+  position: relative;
+  line-height: 1.2;
+  width: 400px;
+  cursor: pointer;
+  height: auto;
+}
+.media-caption {
+  color: #eee;
+  background: black;
+  background: rgba(0,0,0,0.75); 
+  padding: 0 0 5px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+}
+.show-caption {
+  color: white;
+  background: black;
+  background: rgba(0,0,0,0.75); 
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.caption-expand {
+  color: white;
+  background: black;
+  background: rgba(0,0,0,0.75); 
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+
+
+
 /**
  * Mobile
  */
@@ -287,7 +454,6 @@ nav .dropdown .menu .item a:hover {
   .sections {
     width: 800px;
   }
-
   .article {
     width: 380px;
   }
@@ -297,26 +463,44 @@ nav .dropdown .menu .item a:hover {
   .article:nth-of-type(2n) {
     margin-right: 0;
   }
-  
-  
   .topsection div .cta {
     font-size: 18px;
-
   }
   .topsection div .cta div:first-child {
     font-size: 28px;
     margin-bottom: 10px;
   }
-
-  
   .topsection div .cta .play-button i {
     font-size: 75px;
   }
   .topsection div .cta .purchase-game {
     margin-top: 100px;
   }
-
-  
+  #external-media {
+    display: block;
+  }
+  #external-media div {
+    width: 100%;
+  }
+  #external-media div:first-child {
+    margin-bottom: 40px;
+  }
+  #external-media div:last-child {
+    width: 100%;
+  }
+  .bandcamp-widget {
+    width: 100%;
+    margin: 0 auto; 
+  }
+  .media-item {
+    width: 380px;
+  }
+  .media-item:nth-of-type(3n) {
+    margin-right: 40px;
+  }
+  .media-item:nth-of-type(2n) {
+    margin-right: 0;
+  }
 }
 @media only screen and (max-width:800px) {
   #header > div {
@@ -347,9 +531,17 @@ nav .dropdown .menu .item a:hover {
   .article:nth-of-type(3n) {
     margin-right: 0;
   }
+  #media > * {
+    width: 100%;
+  }
+  .media-item {
+    margin-right: 0;
+  }
+  .media-item:nth-of-type(3n) {
+    margin-right: 0;
+  }
 }
 @media only screen and (max-width:500px) {
-
   #header {
     background: black;
     height: 100px;
@@ -358,20 +550,19 @@ nav .dropdown .menu .item a:hover {
   #header > div {
     padding: 0 20px;
   }
-
   .nav {
     display: none;
   }
-
   .mobile-menu {
     color: white;
     display: block;
     float: right;
     margin: 35px 20px 0 0;
   }
-
   .overlay {
     display: none;
   }
-
+  #reviews {
+    display: none;
+  }
 }
