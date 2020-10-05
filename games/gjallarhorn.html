@@ -21,7 +21,7 @@
     <meta name="twitter:description" content="Horizon's End is a video game design company focused on delivering old school RPG's to the modern age gamer and to lifelong lovers of the genre. We aim to provide an unforgettable gaming experience to people around the globe.">
     <meta name="twitter:image" content="https://www.horizonsend.com/images/logo-black.png">
 
-    <title>Horizon's End | Video Game Design</title>
+    <title>Horizon's End | Gjallarhorn</title>
 
     <link rel="stylesheet" type="text/css" href="/css/index.css">
     <link rel="shortcut icon" href="/images/favicon.png?v=2">
@@ -252,13 +252,6 @@
       </div>
       <br>
 
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
-
 </section>
 
 
@@ -318,17 +311,12 @@
       function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
         slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
       }
     </script>
   </body>
