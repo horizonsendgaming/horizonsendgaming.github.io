@@ -358,6 +358,10 @@ nav .dropdown .menu .item a:hover {
     padding: 0 20px;
   }
 
+  .nav {
+    display: none;
+  }
+
   .mobile-menu {
     color: white;
     display: block;
