@@ -65,7 +65,7 @@ nav .dropdown .text {
 nav .dropdown .text:hover {
   text-decoration: underline; 
 }
-#navigation .dropdown .menu {
+nav .dropdown .menu {
   background-color: #f9f9f9;
   border-radius: 0 0 5px 5px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
