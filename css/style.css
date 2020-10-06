@@ -10,14 +10,16 @@ html, body {
 }
 #header {
   width: 100%;
-  background: black;
+  background: none;
   border-top: 1px solid red;
   overflow: hidden;
+  position: absolute;
   z-index: 3;
 }
 #header > div {
-  width: 1280px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 40px;
 }
 #header > div h1 {
   display: inline-block;
@@ -44,13 +46,100 @@ nav {
 }
 nav a, nav a:link, nav a:visited, nav a:active {
   color: white;
-  font-size: 44px;
+  font-size: 18px;
   text-decoration: none;
-  margin-right: 300px;
+  margin-right: 30px;
 }
-nav a:last-child {
-  margin-right: 0;
+nav a:hover {
+ text-decoration: underline; 
 }
+nav .dropdown {
+  display: inline-block;
+  height: 200px;
+  position: relative;
+}
+nav .dropdown .text {
+  color: white;
+  font-size: 18px;
+}
+nav .dropdown .text:hover {
+  text-decoration: underline; 
+}
+#navigation .dropdown .menu {
+  background-color: #f9f9f9;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  display: none;
+  height: 200px;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  width: 218px;
+  z-index: 3;
+}
+nav .dropdown:hover .menu,
+nav .dropdown:active .menu {
+  background-color: white;
+  display: block;
+}
+nav .dropdown .menu .item {
+  height: 60px;
+  width: 100%;
+}
+nav .dropdown .menu .item a {
+  border-bottom: 1px solid #eee;
+  color: black;
+  display: block;
+  font-size: 16px;
+  padding: 20px; 
+  text-transform: uppercase;
+  width: 100%;
+}
+nav .dropdown .menu .item a:hover {
+  background-color: #eee;
+  text-decoration: none;
+}
+
+.mobile-menu-button {
+  display: none;
+}
+#mobile-menu {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden; 
+  transition: 0.5s;
+}
+.mobile-menu-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+#mobile-menu a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+#mobile-menu a:hover, #mobile-menu a:focus {
+  color: #f1f1f1;
+}
+#mobile-menu .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
 #footer {
   text-align: center;
   width: 100%;
@@ -64,7 +153,6 @@ nav a:last-child {
   width: 200px;
   margin-bottom: 40px;
 }
-
 #footer a {
   font-size: 14px;
   color: #999;
@@ -80,103 +168,85 @@ nav a:last-child {
   margin: 0 auto;
 }
 
-/**
- * Hero
- */
-#hero {
-  margin-bottom: 40px;
-}
-.side-bar {
-  width: 400px;
-}
-.side-bar > img {
-  width: 400px;
-  margin-bottom: 40px;
-  border: 1px solid gray;
-}
-a.side-bar-btn {
-  display: block;
-  width: 100%;
-  color: white;
-  padding: 40px 20px 48px;
-  background: #2b2727;
-  border: 1px solid #111;
-  font-size: 13px;
-  text-decoration: none;
-}
-.side-bar-btn:hover {
-  background: #333;
-}
-.side-bar-btn img {
-  display: block;
-  width: 250px;
-  margin: 0 auto 30px auto;
-}
-.side-bar-btn p {
-  text-align: center;
-  padding: 0 40px;
-}
-.kickstarter {
-  border: 1px solid #777;
-  margin-right: 40px;
-}
+
+/*===========================================================*/
 
 .topsection {
+  background: black;
   display: flex;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
+  margin-bottom: 40px;
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
-
-.overlay {
+.topsection div img {
+  margin: 0 auto;
+  max-height: 100vh;
+  width: 100%;
+}
+.topsection div .cta {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
   position: absolute;
-  display: block; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100vh; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
+  text-align: center;
+  text-shadow: 1px 1px black;
+  top: 40%;
+  width: 100%;
+  z-index: 99;
+}
+.topsection div .cta div:first-child {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.topsection div .cta .play-button {
+  text-align: center;
+  width: 100%;
+}
+.topsection div .cta .play-button i {
+  cursor: pointer;
+  font-size: 100px;
+}
+.topsection div .cta .purchase-game {
+  margin-top: 200px;
+}
+.topsection div .cta .purchase-game p {
+  margin-bottom: 25px; 
+}
+.topsection div .cta .purchase-game a {
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.topsection div .cta .purchase-game a:hover {
+  text-decoration: none;
+}
+.overlay {
+  background-color: rgba(0,0,0,0.3);
+ /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 50%,rgba(0,0,0,0.65) 100%); */
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 50%,rgba(0,0,0,0.65) 75%,rgba(0,0,0,0.65) 100%);
   bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+  display: block;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
-/**
- * Showcase
- */
- #showcase {
-  margin-bottom: 40px;
-  margin-top: 40px;
-}
-.trailer {
-  border: 1px solid #777;
-  margin-right: 40px;
-}
-.side-bar {
-  width: 400px;
-}
-.steam-widget {
-  display: block;
-  height: 192px;
-  width: 100%;
-  margin-bottom: 20px;
-  border: none;
-}
-.bandcamp-widget {
-  display: block;
-  width: 100%;
-  height: 290px;
-  border: none;
-}
 
 /**
  * News
  */
 .article {
   width: 400px;
-  margin: 0 40px 40px 0;
+  margin: 40px 40px 40px 0;
   background: white;
 }
 .article:nth-of-type(3n) {
@@ -245,23 +315,62 @@ a.side-bar-btn {
   text-decoration: underline;
 }
 
+
+
+/**
+ * Modal
+ **/
+ .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 /**
  * Reviews
- **/
-
+ */
 #reviews {
   display: flex;
   flex-flow: row no-wrap;
-  height: 450px;
+  height: 420px;
   justify-content: space-between;
-  margin: 0 auto 40px auto;
+  margin: 40px auto 40px auto;
+  padding: 40px 0 0 0;
   overflow: hidden;
   width: 1280px;
-  
-  border: 1px dashed red;
 }
- 
+
 #reviews div {
+  height: 100%;
   width: 400px;
 }
 
@@ -269,10 +378,45 @@ a.side-bar-btn {
   width: 100%;
 }
 
+/**
+ * External Media
+ */
+#external-media {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  width: 100%; 
+}
+#external-media div {
+  width: 620px;
+}
+
+
+#external-media div a,
+#external-media div a img {
+  width: 100%; 
+}
+.steam-widget {
+  display: block;
+  height: 192px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+}
+.bandcamp-widget {
+  display: block;
+  width: 100%;
+  height: 288px;
+  border: none;
+}
+
 
 /**
  * Media
  */
+#media {
+  margin-top: 40px; 
+}
 #media h3 {
   font-size: 22px;
   font-weight: lighter;
@@ -336,52 +480,16 @@ a.side-bar-btn {
   width: 100%;
   height: 100px;
 }
+
+
+
+/**
+ * Mobile
+ */
+
 @media only screen and (max-width:1200px) {
-  #header > div {
-    width: 800px;
-  }
-  nav a, nav a:link, nav a:visited, nav a:active {
-    margin-right: 100px;
-  }
-  nav a:last-child {
-    margin-right: 0;
-  }
   .sections {
     width: 800px;
-  }
-  .kickstarter {
-    margin-right: 0;
-  }
-  .side-bar > img {
-    width: 380px;
-    margin-right: 40px;
-    margin-bottom: 0;
-  }
-  a.side-bar-btn {
-    width: 380px;
-  }
-  a.side-bar-btn img {
-    width: 280px;
-  }
-  #showcase {
-    margin-bottom: 20px;
-  }
-  .trailer {
-    margin-right: 0;
-  }
-  .side-bar {
-    display: flex;
-    margin: 40px 0 0;
-    width: 100%;
-  }
-  .steam-widget {
-    width: 380px;
-    margin-right: 40px;
-    margin-bottom: 0;
-  }
-  .bandcamp-widget {
-    width: 380px;
-    height: 170px;
   }
   .article {
     width: 380px;
@@ -391,6 +499,35 @@ a.side-bar-btn {
   }
   .article:nth-of-type(2n) {
     margin-right: 0;
+  }
+  .topsection div .cta {
+    font-size: 18px;
+  }
+  .topsection div .cta div:first-child {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .topsection div .cta .play-button i {
+    font-size: 75px;
+  }
+  .topsection div .cta .purchase-game {
+    margin-top: 100px;
+  }
+  #external-media {
+    display: block;
+  }
+  #external-media div {
+    width: 100%;
+  }
+  #external-media div:first-child {
+    margin-bottom: 40px;
+  }
+  #external-media div:last-child {
+    width: 100%;
+  }
+  .bandcamp-widget {
+    width: 100%;
+    margin: 0 auto; 
   }
   .media-item {
     width: 380px;
@@ -403,47 +540,24 @@ a.side-bar-btn {
   }
 }
 @media only screen and (max-width:800px) {
-  main {
-    padding: 0 10px;
-  }
   #header > div {
     width: 100%;
   }
+  #header > div h1 {
+    display: inline-block;
+    width: 200px;
+  }
   .logo {
     width: 200px;
-    margin-left: 5px;
-  }
-  nav {
-    margin-top: 28px;
-  }
-  nav a, nav a:link, nav a:visited, nav a:active {
-    font-size: 34px;
-    margin-right: 50px;
   }
   .sections {
     width: 100%;
   }
-  .trailer, 
-  .side-bar, 
-  .side-bar > img,
-  a.side-bar-btn,
-  .steam-widget, 
-  .bandcamp-widget {
-    display: block;
-    width: 100%;
+  .topsection div .cta {
+    font-size: 14px;
   }
-  .side-bar > img {
-    margin-bottom: 40px;
-  }
-  #showcase {
-    margin-bottom: 40px;
-  }
-  .steam-widget {
-    margin-bottom: 20px;
-  }
-  .bandcamp-widget {
-    max-width: 700px;
-    margin: 0 auto;
+  .topsection div .cta div:first-child {
+    font-size: 22px;
   }
   #news > * {
     width: 100%;
@@ -465,10 +579,38 @@ a.side-bar-btn {
   }
 }
 @media only screen and (max-width:500px) {
-  main {
-    padding: 0 5px;
+  #header {
+    background: black;
+    height: 100px;
+    position: static;
   }
-  nav {
+  #header > div {
+    padding: 0 20px;
+  }
+  #navigation {
     display: none;
+  }
+  .mobile-menu-button {
+    color: white;
+    display: block;
+    float: right;
+    margin: 35px 20px 0 0;
+    z-index: 99;
+  }
+  .overlay {
+    display: none;
+  }
+  #reviews {
+    display: none;
+  }
+}
+
+/* Required for mobile menu */
+@media screen and (max-height: 450px) {
+  #mobile-menu a {font-size: 20px}
+  #mobile-menu .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
