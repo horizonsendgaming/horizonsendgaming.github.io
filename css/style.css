@@ -87,7 +87,6 @@ nav .dropdown .menu .item {
   width: 100%;
 }
 nav .dropdown .menu .item a {
-  background-color: rgba(255,255,255,0.7);
   border-bottom: 1px solid rgba(255,255,255,0.5);
   color: white;
   display: block;
@@ -98,6 +97,7 @@ nav .dropdown .menu .item a {
 }
 nav .dropdown .menu .item a:hover {
   background-color: rgba(255,255,255,0.5);
+  color: black;
   text-decoration: none;
 }
 
