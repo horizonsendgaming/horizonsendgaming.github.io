@@ -80,7 +80,6 @@ nav .dropdown .menu {
 }
 nav .dropdown:hover .menu,
 nav .dropdown:active .menu {
-  background-color: white;
   display: block;
 }
 nav .dropdown .menu .item {
