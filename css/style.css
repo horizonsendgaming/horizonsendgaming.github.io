@@ -54,7 +54,7 @@ nav a:hover {
  text-decoration: underline; 
 }
 nav .dropdown {
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
   display: inline-block;
   height: 200px;
   position: relative;
@@ -68,7 +68,7 @@ nav .dropdown .text:hover {
 }
 nav .dropdown .menu {
   background-color: rgba(255,255,255,0.5);
-  border-radius: 5px; /* 0 0 5px 5px; */
+  border-radius: 0 0 5px 5px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   display: none;
   height: 200px;
@@ -80,6 +80,7 @@ nav .dropdown .menu {
 }
 nav .dropdown:hover .menu,
 nav .dropdown:active .menu {
+  border-radius: 0 0 5px 5px;
   display: block;
 }
 nav .dropdown .menu .item {
