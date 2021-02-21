@@ -44,9 +44,8 @@ nav {
   float: right;
   margin-top: 45px;
 }
-
-nav:last-child {
-  background: red;
+.donate-btn {
+  margin-left: 30px;
 }
 nav a, nav a:link, nav a:visited, nav a:active {
   color: white;
