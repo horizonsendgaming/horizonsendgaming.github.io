@@ -44,6 +44,10 @@ nav {
   float: right;
   margin-top: 45px;
 }
+
+nav:last-child {
+  background: red;
+}
 nav a, nav a:link, nav a:visited, nav a:active {
   color: white;
   font-size: 18px;
